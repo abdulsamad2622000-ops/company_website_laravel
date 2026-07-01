@@ -1,0 +1,1079 @@
+@extends('layouts.app')
+
+@section('title', 'About Us — NovaStackHub')
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+@endpush
+
+@section('content')
+<!-- ═══ PRELOADER ═══ -->
+  <div id="preloader">
+    <div class="loader-box">
+      <span class="loader-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="vertical-align:middle;margin-right:4px"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> NovaStack<span style="color:#00c8ff">hub</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ═══ SIDE ICONS ═══ -->
+  <div class="side-icons">
+    <a href="/" class="side-icon-btn" data-label="Home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+    <a href="#about-story" class="side-icon-btn" data-label="Story">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    </a>
+    <a href="#about-values" class="side-icon-btn" data-label="Values">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </a>
+    <a href="#about-team" class="side-icon-btn" data-label="Team">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </a>
+    <a href="#about-contact" class="side-icon-btn" data-label="Contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
+  </div>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div class="d-flex gap-4 flex-wrap">
+          <span><i class="bi bi-geo-alt me-1"></i>55 Main Street, Karachi, Pakistan</span>
+          <a href="mailto:infonovastackhub@gmail.com"><i class="bi bi-envelope me-1"></i>infonovastackhub@gmail.com</a>
+          <a href="tel:+11234568899"><i class="bi bi-telephone me-1"></i>+1 (123) 456 889</a>
+        </div>
+        <div class="d-flex gap-3 align-items-center">
+          <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/img/logo.png" alt="NovaStackhub Logo"
+          style="height:60px;width:auto;object-fit:contain;margin-right:10px;">
+        <span class="brand-text">NovaStackhub</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="ti ti-home me-1"></i>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="ti ti-info-circle me-1"></i>About Us</a>
+          </li>
+
+          <!-- SERVICES -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/#services" data-bs-toggle="dropdown">
+              <i class="ti ti-briefcase me-1"></i>Services
+            </a>
+            <ul class="dropdown-menu mega-menu">
+              <div class="mega-cols">
+                <div class="mega-col">
+                  <li><h6 class="dropdown-header">💻 Software Development</h6></li>
+                  <li><a class="dropdown-item" href="/services/custom-software-development"><i class="ti ti-code"></i>Custom Software Development</a></li>
+                  <li><a class="dropdown-item" href="/services/erp-development"><i class="ti ti-building-factory"></i>ERP Development</a></li>
+                  <li><a class="dropdown-item" href="/services/crm-development"><i class="ti ti-users"></i>CRM Development</a></li>
+                  <li><a class="dropdown-item" href="/services/saas-product-development"><i class="ti ti-cloud"></i>SaaS Product Development</a></li>
+                  <li><a class="dropdown-item" href="/services/mvp-development"><i class="ti ti-rocket"></i>MVP Development</a></li>
+                  <li><a class="dropdown-item" href="/services/enterprise-software"><i class="ti ti-server"></i>Enterprise Software</a></li>
+                  <li><a class="dropdown-item" href="/services/business-process-automation"><i class="ti ti-robot"></i>Business Process Automation</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">🎨 Design</h6></li>
+                  <li><a class="dropdown-item" href="/services/ui-ux-design"><i class="ti ti-palette"></i>UI/UX Design</a></li>
+                  <li><a class="dropdown-item" href="/services/mobile-app-ui-ux"><i class="ti ti-device-mobile"></i>Mobile App UI/UX</a></li>
+                  <li><a class="dropdown-item" href="/services/accessibility-services"><i class="ti ti-accessible"></i>Accessibility Services</a></li>
+                </div>
+                <div class="mega-col">
+                  <li><h6 class="dropdown-header">🌐 Web &amp; E-Commerce</h6></li>
+                  <li><a class="dropdown-item" href="/services/web-application-development"><i class="ti ti-world"></i>Web Application Development</a></li>
+                  <li><a class="dropdown-item" href="/services/frontend-development"><i class="ti ti-layout"></i>Frontend Development</a></li>
+                  <li><a class="dropdown-item" href="/services/backend-development"><i class="ti ti-database"></i>Backend Development</a></li>
+                  <li><a class="dropdown-item" href="/services/e-commerce-solutions"><i class="ti ti-shopping-cart"></i>E-Commerce Solutions</a></li>
+                  <li><a class="dropdown-item" href="/services/api-development-integration"><i class="ti ti-api"></i>API Development &amp; Integration</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">☁️ Cloud &amp; IT Ops</h6></li>
+                  <li><a class="dropdown-item" href="/services/cloud-solutions"><i class="ti ti-cloud-upload"></i>Cloud Solutions</a></li>
+                  <li><a class="dropdown-item" href="/services/devops-services"><i class="ti ti-settings"></i>DevOps Services</a></li>
+                  <li><a class="dropdown-item" href="/services/cybersecurity"><i class="ti ti-shield-lock"></i>Cybersecurity</a></li>
+                  <li><a class="dropdown-item" href="/services/infrastructure-design"><i class="ti ti-topology-star"></i>Infrastructure Design</a></li>
+                  <li><a class="dropdown-item" href="/services/it-consulting"><i class="ti ti-headset"></i>IT Consulting</a></li>
+                </div>
+                <div class="mega-col">
+                  <li><h6 class="dropdown-header">📱 Mobile Apps</h6></li>
+                  <li><a class="dropdown-item" href="/services/android-app-development"><i class="ti ti-brand-android"></i>Android App Development</a></li>
+                  <li><a class="dropdown-item" href="/services/ios-app-development"><i class="ti ti-brand-apple"></i>iOS App Development</a></li>
+                  <li><a class="dropdown-item" href="/services/cross-platform-flutter-rn"><i class="ti ti-devices"></i>Cross-Platform (Flutter/RN)</a></li>
+                  <li><a class="dropdown-item" href="/services/enterprise-mobile-apps"><i class="ti ti-building"></i>Enterprise Mobile Apps</a></li>
+                  <li><a class="dropdown-item" href="/services/on-demand-service-apps"><i class="ti ti-truck-delivery"></i>On-Demand Service Apps</a></li>
+                  <li><a class="dropdown-item" href="/services/fintech-banking-apps"><i class="ti ti-coin"></i>FinTech &amp; Banking Apps</a></li>
+                  <li><a class="dropdown-item" href="/services/healthcare-mobile-apps"><i class="ti ti-heart-rate-monitor"></i>Healthcare Mobile Apps</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">🔧 Support &amp; Quality</h6></li>
+                  <li><a class="dropdown-item" href="/services/maintenance-support"><i class="ti ti-tool"></i>Maintenance &amp; Support</a></li>
+                  <li><a class="dropdown-item" href="/services/qa-testing"><i class="ti ti-checkup-list"></i>QA &amp; Testing</a></li>
+                  <li><a class="dropdown-item" href="/services/app-store-deployment"><i class="ti ti-brand-google-play"></i>App Store Deployment</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+          <!-- INDUSTRIES -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <i class="ti ti-building-skyscraper me-1"></i>Industries
+            </a>
+            <ul class="dropdown-menu industries-mega">
+              <div class="mega-top-label"><i class="ti ti-grid-dots"></i>40 Industries We Serve</div>
+              <div class="ind-grid">
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="retail-and-e-commerce" data-ind-name="Retail &amp; E-Commerce" data-ind-icon="ti ti-shopping-bag"><i class="ti ti-shopping-bag"></i>Retail &amp; E-Commerce</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="healthcare-and-medical" data-ind-name="Healthcare &amp; Medical" data-ind-icon="ti ti-stethoscope"><i class="ti ti-stethoscope"></i>Healthcare &amp; Medical</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="real-estate-and-property" data-ind-name="Real Estate &amp; Property" data-ind-icon="ti ti-home"><i class="ti ti-home"></i>Real Estate &amp; Property</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="finance-and-banking" data-ind-name="Finance &amp; Banking" data-ind-icon="ti ti-building-bank"><i class="ti ti-building-bank"></i>Finance &amp; Banking</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="education-and-e-learning" data-ind-name="Education &amp; E-Learning" data-ind-icon="ti ti-school"><i class="ti ti-school"></i>Education &amp; E-Learning</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="manufacturing-and-production" data-ind-name="Manufacturing &amp; Production" data-ind-icon="ti ti-tools"><i class="ti ti-tools"></i>Manufacturing &amp; Production</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="logistics-and-supply-chain" data-ind-name="Logistics &amp; Supply Chain" data-ind-icon="ti ti-truck"><i class="ti ti-truck"></i>Logistics &amp; Supply Chain</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="restaurant-and-food" data-ind-name="Restaurant &amp; Food" data-ind-icon="ti ti-chef-hat"><i class="ti ti-chef-hat"></i>Restaurant &amp; Food</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="gold-and-jewelry-trading" data-ind-name="Gold &amp; Jewelry Trading" data-ind-icon="ti ti-diamond"><i class="ti ti-diamond"></i>Gold &amp; Jewelry Trading</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="hotel-and-hospitality" data-ind-name="Hotel &amp; Hospitality" data-ind-icon="ti ti-bed"><i class="ti ti-bed"></i>Hotel &amp; Hospitality</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="construction-and-engineering" data-ind-name="Construction &amp; Engineering" data-ind-icon="ti ti-crane"><i class="ti ti-crane"></i>Construction &amp; Engineering</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="hr-and-recruitment" data-ind-name="HR &amp; Recruitment" data-ind-icon="ti ti-users"><i class="ti ti-users"></i>HR &amp; Recruitment</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="legal-and-law-firms" data-ind-name="Legal &amp; Law Firms" data-ind-icon="ti ti-gavel"><i class="ti ti-gavel"></i>Legal &amp; Law Firms</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="non-profit-and-ngo" data-ind-name="Non-Profit &amp; NGO" data-ind-icon="ti ti-heart"><i class="ti ti-heart"></i>Non-Profit &amp; NGO</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="government-and-public-sector" data-ind-name="Government &amp; Public Sector" data-ind-icon="ti ti-building"><i class="ti ti-building"></i>Government &amp; Public Sector</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="insurance" data-ind-name="Insurance" data-ind-icon="ti ti-shield"><i class="ti ti-shield"></i>Insurance</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="automotive" data-ind-name="Automotive" data-ind-icon="ti ti-car"><i class="ti ti-car"></i>Automotive</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="agriculture-and-farming" data-ind-name="Agriculture &amp; Farming" data-ind-icon="ti ti-plant"><i class="ti ti-plant"></i>Agriculture &amp; Farming</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="fitness-and-wellness" data-ind-name="Fitness &amp; Wellness" data-ind-icon="ti ti-barbell"><i class="ti ti-barbell"></i>Fitness &amp; Wellness</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="media-and-entertainment" data-ind-name="Media &amp; Entertainment" data-ind-icon="ti ti-movie"><i class="ti ti-movie"></i>Media &amp; Entertainment</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="telecom-and-it" data-ind-name="Telecom &amp; IT" data-ind-icon="ti ti-wifi"><i class="ti ti-wifi"></i>Telecom &amp; IT</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="oil-and-gas" data-ind-name="Oil &amp; Gas" data-ind-icon="ti ti-flame"><i class="ti ti-flame"></i>Oil &amp; Gas</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="textile-and-apparel" data-ind-name="Textile &amp; Apparel" data-ind-icon="ti ti-shirt"><i class="ti ti-shirt"></i>Textile &amp; Apparel</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="pharmacy-and-drug-store" data-ind-name="Pharmacy &amp; Drug Store" data-ind-icon="ti ti-pill"><i class="ti ti-pill"></i>Pharmacy &amp; Drug Store</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="beauty-and-salon" data-ind-name="Beauty &amp; Salon" data-ind-icon="ti ti-sparkles"><i class="ti ti-sparkles"></i>Beauty &amp; Salon</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="travel-and-tourism" data-ind-name="Travel &amp; Tourism" data-ind-icon="ti ti-plane"><i class="ti ti-plane"></i>Travel &amp; Tourism</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="event-management" data-ind-name="Event Management" data-ind-icon="ti ti-confetti"><i class="ti ti-confetti"></i>Event Management</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="security-and-surveillance" data-ind-name="Security &amp; Surveillance" data-ind-icon="ti ti-camera"><i class="ti ti-camera"></i>Security &amp; Surveillance</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="printing-and-publishing" data-ind-name="Printing &amp; Publishing" data-ind-icon="ti ti-printer"><i class="ti ti-printer"></i>Printing &amp; Publishing</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="interior-design-and-architecture" data-ind-name="Interior Design &amp; Architecture" data-ind-icon="ti ti-ruler"><i class="ti ti-ruler"></i>Interior Design &amp; Architecture</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="accounting-and-tax-firms" data-ind-name="Accounting &amp; Tax Firms" data-ind-icon="ti ti-calculator"><i class="ti ti-calculator"></i>Accounting &amp; Tax Firms</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="wholesale-and-distribution" data-ind-name="Wholesale &amp; Distribution" data-ind-icon="ti ti-package"><i class="ti ti-package"></i>Wholesale &amp; Distribution</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="import-and-export" data-ind-name="Import &amp; Export" data-ind-icon="ti ti-ship"><i class="ti ti-ship"></i>Import &amp; Export</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="courier-and-delivery" data-ind-name="Courier &amp; Delivery" data-ind-icon="ti ti-bike"><i class="ti ti-bike"></i>Courier &amp; Delivery</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="supermarket-and-grocery" data-ind-name="Supermarket &amp; Grocery" data-ind-icon="ti ti-basket"><i class="ti ti-basket"></i>Supermarket &amp; Grocery</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="gym-and-sports" data-ind-name="Gym &amp; Sports" data-ind-icon="ti ti-run"><i class="ti ti-run"></i>Gym &amp; Sports</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="clinic-and-diagnostic-labs" data-ind-name="Clinic &amp; Diagnostic Labs" data-ind-icon="ti ti-microscope"><i class="ti ti-microscope"></i>Clinic &amp; Diagnostic Labs</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="school-and-university" data-ind-name="School &amp; University" data-ind-icon="ti ti-certificate"><i class="ti ti-certificate"></i>School &amp; University</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="car-rental-and-fleet" data-ind-name="Car Rental &amp; Fleet" data-ind-icon="ti ti-steering-wheel"><i class="ti ti-steering-wheel"></i>Car Rental &amp; Fleet</a></li>
+                <li><a class="dropdown-item ind-link" href="javascript:void(0)" data-ind-slug="charity-and-social-welfare" data-ind-name="Charity &amp; Social Welfare" data-ind-icon="ti ti-hand-heart"><i class="ti ti-hand-heart"></i>Charity &amp; Social Welfare</a></li>
+              </div>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#case-studio"><i class="ti ti-report-analytics me-1"></i>Case Studio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing"><i class="bi bi-tag me-1"></i>Pricing</a>
+          </li>
+
+        </ul>
+        <a href="#about-contact" class="btn-quote nav-link px-4">CONTACT US &rarr;</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ ABOUT HERO ═══ -->
+  <section class="about-hero" id="about-hero">
+    <div class="about-hero-particles">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="about-hero-grid"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-hero g-5">
+        <div class="col-lg-6">
+          <div class="ah-eyebrow" data-aos="fade-right" data-aos-delay="0">
+            <span class="ah-dot"></span> About NovaStackhub
+          </div>
+          <h1 class="ah-title" data-aos="fade-right" data-aos-delay="100">
+            We Are <span class="ah-hl">Passionate</span><br>Digital Innovators
+          </h1>
+          <p class="ah-desc" data-aos="fade-right" data-aos-delay="200">
+            Founded with a vision to revolutionize the digital landscape, NovaStackhub has grown into a premier software agency trusted by <strong>36k+ global clients</strong> across 40+ industries.
+          </p>
+          <div class="ah-btns" data-aos="fade-right" data-aos-delay="300">
+            <a href="#about-story" class="btn-primary-c">Discover Our Story &rarr;</a>
+            <a href="#about-team" class="btn-outline-c"><i class="bi bi-people me-2"></i>Meet The Team</a>
+          </div>
+          <!-- Breadcrumb -->
+          <nav class="ah-breadcrumb" data-aos="fade-right" data-aos-delay="400">
+            <a href="/">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>About Us</span>
+          </nav>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="ah-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Our Team" class="ah-main-img">
+            <div class="ah-img-shimmer"></div>
+            <!-- floating badge -->
+            <div class="ah-badge ah-badge-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="color:var(--cyan);flex-shrink:0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <div>
+                <div class="ah-badge-num">10+</div>
+                <div class="ah-badge-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="ah-badge ah-badge-bottom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="color:var(--cyan);flex-shrink:0"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              <div>
+                <div class="ah-badge-num">850+</div>
+                <div class="ah-badge-label">Projects Delivered</div>
+              </div>
+            </div>
+            <div class="ah-glow-ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS STRIP ═══ -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-num" data-target="36" data-suffix="k+">0</div>
+          <div class="stat-lbl">Global Clients</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-num" data-target="850" data-suffix="+">0</div>
+          <div class="stat-lbl">Projects Delivered</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-num" data-target="40" data-suffix="+">0</div>
+          <div class="stat-lbl">Industries Served</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-num" data-target="99" data-suffix="%">0</div>
+          <div class="stat-lbl">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STORY SECTION ═══ -->
+  <section class="story-section" id="about-story">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="story-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Our Story" class="story-main-img rounded-4">
+            <div class="story-img-overlay"></div>
+            <div class="story-img-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              <div>
+                <div class="story-card-year">Est. 2014</div>
+                <div class="story-card-text">Decade of Innovation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <span class="eyebrow"><i class="bi bi-asterisk"></i> Our Story</span>
+          <h2 class="section-title">From a <span>Small Startup</span><br>to a Global Agency</h2>
+          <p class="section-text">It all started in 2014 with a small team of passionate developers and a big dream — to build software that genuinely changes how businesses operate. Over the years, we have grown into a 150+ member team spanning design, engineering, strategy, and support.</p>
+          <p class="section-text">Today, NovaStackhub is a trusted digital partner for businesses across 40+ industries worldwide. We combine deep technical expertise with a client-first philosophy to deliver solutions that create real, measurable impact.</p>
+
+          <div class="story-timeline">
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="0">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-year">2014</div>
+                <div class="tl-text">Founded in Karachi with 5 developers and 1 big dream.</div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-year">2017</div>
+                <div class="tl-text">Expanded to 50+ team members. Crossed 200 projects delivered.</div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-year">2020</div>
+                <div class="tl-text">Went global — serving clients across USA, UK, UAE, and Canada.</div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-year">2024</div>
+                <div class="tl-text">36k+ clients, 850+ projects. Industry-leading software agency.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE STRIP ═══ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Innovation <i class="bi bi-asterisk"></i></span>
+      <span>Design <i class="bi bi-asterisk"></i></span>
+      <span>Development <i class="bi bi-asterisk"></i></span>
+      <span>Strategy <i class="bi bi-asterisk"></i></span>
+      <span>Excellence <i class="bi bi-asterisk"></i></span>
+      <span>Technology <i class="bi bi-asterisk"></i></span>
+      <span>Innovation <i class="bi bi-asterisk"></i></span>
+      <span>Design <i class="bi bi-asterisk"></i></span>
+      <span>Development <i class="bi bi-asterisk"></i></span>
+      <span>Strategy <i class="bi bi-asterisk"></i></span>
+      <span>Excellence <i class="bi bi-asterisk"></i></span>
+      <span>Technology <i class="bi bi-asterisk"></i></span>
+    </div>
+  </div>
+
+  <!-- ═══ MISSION / VISION / VALUES ═══ -->
+  <section class="values-section" id="about-values">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> What Drives Us</span>
+        <h2 class="section-title">Our Mission, Vision <span>&amp; Values</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <div class="value-glow"></div>
+            <h4>Our Mission</h4>
+            <p>To revolutionize the digital landscape by delivering innovative software solutions that empower businesses to achieve their full potential and lead in the modern economy.</p>
+            <ul class="value-list">
+              <li><i class="bi bi-check-lg"></i> Client-first approach</li>
+              <li><i class="bi bi-check-lg"></i> Measurable business outcomes</li>
+              <li><i class="bi bi-check-lg"></i> Continuous innovation</li>
+            </ul>
+            <div class="value-bottom-line"></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="value-card value-card-accent">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="value-glow"></div>
+            <h4>Our Vision</h4>
+            <p>To become the leading global software partner recognized for building technology that genuinely transforms how businesses operate, scale, and grow across every industry worldwide.</p>
+            <ul class="value-list">
+              <li><i class="bi bi-check-lg"></i> Global leadership</li>
+              <li><i class="bi bi-check-lg"></i> Technology transformation</li>
+              <li><i class="bi bi-check-lg"></i> Industry-wide impact</li>
+            </ul>
+            <div class="value-bottom-line"></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="value-glow"></div>
+            <h4>Our Values</h4>
+            <p>We believe great software is built on collaboration, transparency, and relentless attention to detail. These core values guide every decision we make at every stage of development.</p>
+            <ul class="value-list">
+              <li><i class="bi bi-check-lg"></i> Transparency &amp; integrity</li>
+              <li><i class="bi bi-check-lg"></i> Quality over speed</li>
+              <li><i class="bi bi-check-lg"></i> Long-term partnerships</li>
+            </ul>
+            <div class="value-bottom-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY CHOOSE US ═══ -->
+  <section class="why-section">
+    <div class="big-bg-text">Why Choose Us</div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="eyebrow"><i class="bi bi-asterisk"></i> Why Choose Us</span>
+          <h2 class="section-title">The NovaStack <span>Difference</span></h2>
+          <p class="section-text">We don't just write code — we build solutions. Here's what sets us apart from every other agency.</p>
+          <div class="why-grid">
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="0">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h6>Expert Engineering</h6>
+                <p>150+ senior engineers with deep expertise in modern frameworks and architectures.</p>
+              </div>
+            </div>
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="100">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h6>On-Time Delivery</h6>
+                <p>We follow agile methods to deliver fast without compromising quality or reliability.</p>
+              </div>
+            </div>
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="200">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h6>Security First</h6>
+                <p>Every line of code is written with security best practices and compliance in mind.</p>
+              </div>
+            </div>
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h6>24/7 Support</h6>
+                <p>Dedicated support team available round-the-clock to keep your systems running.</p>
+              </div>
+            </div>
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="400">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div>
+                <h6>Data-Driven Results</h6>
+                <p>We measure success by your metrics — conversions, performance, and ROI.</p>
+              </div>
+            </div>
+            <div class="why-item" data-aos="zoom-in" data-aos-delay="500">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h6>Global Reach</h6>
+                <p>Serving 40+ industries across USA, UK, UAE, Canada, Australia and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="why-visual">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Why Us" class="why-img rounded-4">
+            <div class="why-floating-card wfc-1">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <div>
+                <div class="wfc-num">4.9/5</div>
+                <div class="wfc-label">Average Rating</div>
+              </div>
+            </div>
+            <div class="why-floating-card wfc-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <div>
+                <div class="wfc-num">150+</div>
+                <div class="wfc-label">Team Members</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TECH STACK ═══ -->
+  <section class="tech-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Technologies</span>
+        <h2 class="section-title">Our Technology <span>Stack</span></h2>
+        <p class="section-text mx-auto" style="max-width:560px;">We work with cutting-edge technologies to build scalable, secure, and high-performing solutions.</p>
+      </div>
+      <div class="tech-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-pill"><i class="bi bi-diagram-3"></i> React</div>
+        <div class="tech-pill"><i class="bi bi-hdd-stack"></i> Node.js</div>
+        <div class="tech-pill"><i class="bi bi-code-slash"></i> Python</div>
+        <div class="tech-pill"><i class="bi bi-layers"></i> Angular</div>
+        <div class="tech-pill"><i class="bi bi-triangle"></i> Vue.js</div>
+        <div class="tech-pill"><i class="bi bi-database"></i> MongoDB</div>
+        <div class="tech-pill"><i class="bi bi-cloud"></i> AWS</div>
+        <div class="tech-pill"><i class="bi bi-cloud-fill"></i> Azure</div>
+        <div class="tech-pill"><i class="bi bi-box-seam"></i> Docker</div>
+        <div class="tech-pill"><i class="bi bi-code-square"></i> Kotlin</div>
+        <div class="tech-pill"><i class="bi bi-lightning"></i> Swift</div>
+        <div class="tech-pill"><i class="bi bi-phone"></i> Flutter</div>
+        <div class="tech-pill"><i class="bi bi-braces"></i> TypeScript</div>
+        <div class="tech-pill"><i class="bi bi-database-fill"></i> PostgreSQL</div>
+        <div class="tech-pill"><i class="bi bi-cpu"></i> TensorFlow</div>
+        <div class="tech-pill"><i class="bi bi-share"></i> GraphQL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TEAM SECTION ═══ -->
+  <section class="team-section" id="about-team">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Our Professionals</span>
+        <h2 class="section-title">Meet The <span>Dream Team</span></h2>
+        <p class="section-text mx-auto" style="max-width:500px;">Talented individuals united by a shared passion for building exceptional software.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Ahmad Raza">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h5>Ahmad Raza</h5>
+              <p>CEO &amp; Founder</p>
+              <div class="team-tags">
+                <span>Leadership</span>
+                <span>Strategy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80" alt="William J. Alexander">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h5>William J. Alexander</h5>
+              <p>Lead Developer</p>
+              <div class="team-tags">
+                <span>React</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80" alt="Sarah Mitchell">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h5>Sarah Mitchell</h5>
+              <p>UI/UX Lead Designer</p>
+              <div class="team-tags">
+                <span>Figma</span>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80" alt="Donnie O. Goldsmith">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h5>Donnie O. Goldsmith</h5>
+              <p>Cloud Architect</p>
+              <div class="team-tags">
+                <span>AWS</span>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACCORDION — DEEPER INFO ═══ -->
+  <section class="accordion-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="eyebrow"><i class="bi bi-asterisk"></i> Grow &amp; Development</span>
+          <h2 class="section-title">Modern Technology <span>Advancement</span></h2>
+          <p class="section-text">We combine cutting-edge technology with proven methodology to deliver software that stands the test of time.</p>
+          <a href="#about-contact" class="btn-primary-c mt-3 d-inline-block">Start A Project &rarr;</a>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="accordion acc-dark" id="aboutAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="margin-right:8px;flex-shrink:0"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Learn Our Company Mission
+                </button>
+              </h2>
+              <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <div class="d-flex gap-3 align-items-start mb-3">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&q=80" class="acc-thumb" alt="Mission">
+                    <p class="mb-0">Our mission is to revolutionize the digital landscape by delivering innovative software solutions that empower businesses to achieve their full potential and lead in the modern, tech-driven economy.</p>
+                  </div>
+                  <ul class="acc-list">
+                    <li><i class="bi bi-check-lg"></i> Premier Tech Innovations</li>
+                    <li><i class="bi bi-check-lg"></i> Nexus Tech Systems</li>
+                    <li><i class="bi bi-check-lg"></i> Data-driven decisions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="margin-right:8px;flex-shrink:0"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> Our Company Vision
+                </button>
+              </h2>
+              <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <p class="mb-0">We envision becoming the leading global software partner, recognized for building technology that genuinely transforms how businesses operate and grow. Our goal is to be in every industry, powering the next generation of digital businesses.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="margin-right:8px;flex-shrink:0"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Our Philosophy
+                </button>
+              </h2>
+              <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <p class="mb-0">We believe great software is built on collaboration, transparency, and relentless attention to detail at every stage of development. We treat every client like a long-term partner, not just a project.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="margin-right:8px;flex-shrink:0"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> Our Strategy
+                </button>
+              </h2>
+              <div id="acc4" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <p class="mb-0">A data-driven, client-first approach that combines modern engineering practices with measurable business outcomes. We use agile methodology, sprint-based delivery, and continuous feedback loops to ensure project success.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testi-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Client Reviews</span>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>"NovaStack Hub transformed our entire workflow. Their team delivered beyond expectations with clean code, fast turnarounds, and constant communication."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80" alt="Angela Ford">
+              <div>
+                <h6>Angela M. Ford</h6>
+                <span>Product Manager, TechCorp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="testi-card testi-card-accent">
+            <div class="testi-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>"Professional, reliable, and incredibly talented. Working with NovaStack Hub felt like having an in-house dev team that genuinely cared about our success."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="David Owen">
+              <div>
+                <h6>David K. Owen</h6>
+                <span>Startup Founder, LaunchPad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>"From planning to deployment, every step was smooth. NovaStack Hub's attention to detail and design sense really set them apart from every other agency we tried."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sara Whitman">
+              <div>
+                <h6>Sara L. Whitman</h6>
+                <span>Marketing Head, BrandUp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA / CONTACT ═══ -->
+  <section class="cta-section" id="about-contact">
+    <div class="cta-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="eyebrow"><i class="bi bi-asterisk"></i> Work With Us</span>
+          <h2 class="section-title">Ready to Build Something <span>Amazing?</span></h2>
+          <p class="section-text">Let's talk about your project. We are ready to bring your vision to life with world-class engineering and design.</p>
+          <div class="cta-info">
+            <div class="cta-info-item">
+              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div>
+                <div class="cta-info-label">Email</div>
+                <div class="cta-info-val">infonovastackhub@gmail.com</div>
+              </div>
+            </div>
+            <div class="cta-info-item">
+              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.8 12.82 19.79 19.79 0 0 1 1.72 4.25 2 2 0 0 1 3.7 2.1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.17-1.17a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <div class="cta-info-label">Phone</div>
+                <div class="cta-info-val">+1 (123) 456 889</div>
+              </div>
+            </div>
+            <div class="cta-info-item">
+              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <div class="cta-info-label">Location</div>
+                <div class="cta-info-val">55 Main Street, Karachi, Pakistan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="cta-form-wrap">
+            <h4>Send Us A Message</h4>
+            @if (session('lead_success'))
+              <div class="alert alert-success rounded-3" role="alert">{{ session('lead_success') }}</div>
+            @endif
+            @if ($errors->any())
+              <div class="alert alert-danger rounded-3" role="alert">
+                <ul class="mb-0 ps-3">
+                  @foreach ($errors->all() as $e)<li>{{ $e }}</li>@endforeach
+                </ul>
+              </div>
+            @endif
+            <form id="ctaForm" method="POST" action="{{ route('leads.store') }}">
+              @csrf
+              <input type="hidden" name="type" value="cta">
+              <div class="d-none" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="input-wrap">
+                    <i class="bi bi-person"></i>
+                    <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-wrap">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" name="email" placeholder="Your Email" value="{{ old('email') }}" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-wrap">
+                    <i class="bi bi-briefcase"></i>
+                    <select name="service">
+                      <option>Choose Service</option>
+                      <option>Web Development</option>
+                      <option>Mobile App</option>
+                      <option>UI/UX Design</option>
+                      <option>Cloud Solutions</option>
+                      <option>AI &amp; Machine Learning</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-wrap">
+                    <i class="bi bi-chat-text"></i>
+                    <textarea name="message" rows="4" placeholder="Your Message">{{ old('message') }}</textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-c w-100">Send Message &rarr;</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="about-footer">
+    <div class="container">
+
+      <!-- TOP ROW -->
+      <div class="row gy-5 gx-lg-5">
+
+        <!-- Col 1: Brand + Newsletter -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="footer-brand-wrap">
+            <img src="/img/logo.png" alt="NovaStackhub" class="footer-logo">
+            <span class="footer-brand-name">NovaStack<span>hub</span></span>
+          </div>
+          <p class="footer-tagline">Building the future with powerful software solutions. Your trusted technology partner across 40+ industries worldwide.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#0d1f2d" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+          <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
+          <form class="footer-subscribe-form">
+            <div class="footer-input-wrap">
+              <i class="bi bi-envelope"></i>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit" aria-label="Subscribe">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <h6 class="footer-col-title">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="/"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="/#services"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="#about-team"><i class="bi bi-chevron-right"></i>Our Team</a></li>
+            <li><a href="/#blog"><i class="bi bi-chevron-right"></i>Blog</a></li>
+            <li><a href="#about-contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <h6 class="footer-col-title">Services</h6>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Web Development</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Mobile Apps</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>UI/UX Design</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Cloud Solutions</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>AI &amp; ML</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Cybersecurity</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+          <h6 class="footer-col-title">Contact Us</h6>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>55 Main Street,<br>Karachi, Pakistan</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:infonovastackhub@gmail.com">infonovastackhub@gmail.com</a>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+11234568899">+1 (123) 456 889</a>
+            </li>
+            <li>
+              <i class="bi bi-clock"></i>
+              <span>Mon–Fri: 9am – 6pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 5: QR Code -->
+        <div class="col-lg-2" data-aos="fade-up" data-aos-delay="400">
+          <h6 class="footer-col-title">Scan &amp; Connect</h6>
+          <div class="footer-qr-card">
+            <img src="/images/novastack_qr.png" alt="NovaStackhub QR Code" class="footer-qr-img">
+            <div class="footer-qr-label">
+              <i class="bi bi-qr-code"></i>
+              Scan to Visit
+            </div>
+          </div>
+          <p class="footer-qr-note">Scan QR code to connect with NovaStackhub instantly</p>
+        </div>
+
+      </div><!-- /row -->
+
+      <hr class="footer-divider">
+
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 <strong>NovaStack Hub</strong> &mdash; All Rights Reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#about-contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="backToTop">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- INDUSTRY CHOICE MODAL -->
+  <div class="modal fade" id="industryChoiceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:480px;">
+      <div class="modal-content" style="background:#0d1f2d;border:1px solid #1a3050;border-radius:18px;overflow:hidden;">
+        <div class="modal-header" style="background:#080f17;border-bottom:1px solid #1a3050;padding:20px 24px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div id="modalIndIconWrap" style="width:46px;height:46px;border-radius:12px;background:rgba(0,200,255,.1);display:flex;align-items:center;justify-content:center;font-size:22px;color:#00c8ff;"></div>
+            <div>
+              <h5 class="modal-title mb-0" style="color:#fff;font-weight:800;font-size:17px;" id="modalIndTitle">Industry Name</h5>
+              <small style="color:rgba(255,255,255,.45);font-size:12px;">Choose what you'd like to explore</small>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="padding:28px 24px;">
+          <p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:22px;text-align:center;">
+            What would you like to check for <strong style="color:#00c8ff;" id="modalIndNameInline">this industry</strong>?
+          </p>
+          <div class="row g-3">
+            <div class="col-6">
+              <a id="choiceWebsiteBtn" href="#" style="text-decoration:none;">
+                <div class="ind-choice-card">
+                  <div class="ind-choice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                  <h6 style="color:#fff;font-weight:700;margin-bottom:6px;">Demo Website</h6>
+                  <p style="color:rgba(255,255,255,.45);font-size:12.5px;line-height:1.5;margin:0;">Full sample website — homepage, about, services &amp; contact</p>
+                  <div style="margin-top:14px;display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#00c8ff;">Explore <i class="ti ti-arrow-right" style="font-size:13px;"></i></div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6">
+              <a id="choiceErpBtn" href="#" style="text-decoration:none;">
+                <div class="ind-choice-card ind-choice-card--accent">
+                  <div class="ind-choice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+                  <h6 style="color:#fff;font-weight:700;margin-bottom:6px;">ERP System Demo</h6>
+                  <p style="color:rgba(255,255,255,.45);font-size:12.5px;line-height:1.5;margin:0;">Live ERP dashboard with modules, charts &amp; dummy data</p>
+                  <div style="margin-top:14px;display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#00c8ff;">Launch ERP <i class="ti ti-arrow-right" style="font-size:13px;"></i></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <p style="text-align:center;margin-top:18px;font-size:12px;color:rgba(255,255,255,.3);"><i class="ti ti-info-circle me-1"></i>Powered by <strong style="color:rgba(255,255,255,.5);">NovaStackhub ERP Platform</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .ind-choice-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:20px 16px; cursor:pointer; transition:all .25s ease; height:100%; display:flex; flex-direction:column; }
+    .ind-choice-card:hover { background:rgba(0,200,255,.07); border-color:rgba(0,200,255,.35); transform:translateY(-3px); box-shadow:0 8px 28px rgba(0,0,0,.3); }
+    .ind-choice-card--accent { background:rgba(0,200,255,.06); border-color:rgba(0,200,255,.2); }
+    .ind-choice-card--accent:hover { background:rgba(0,200,255,.12); border-color:#00c8ff; }
+    .ind-choice-icon { width:46px; height:46px; border-radius:12px; background:rgba(0,200,255,.1); display:flex; align-items:center; justify-content:center; font-size:22px; color:#00c8ff; margin-bottom:14px; }
+  </style>
+@endsection
+
+@push('scripts')
+@verbatim
+<script src="/js/about.js"></script>
+<script>
+  (function () {
+    var choiceModal = new bootstrap.Modal(document.getElementById('industryChoiceModal'), { backdrop: true, keyboard: true });
+    document.querySelectorAll('.ind-link').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var slug = link.getAttribute('data-ind-slug');
+        var name = link.getAttribute('data-ind-name').replace(/&amp;/g, '&');
+        var icon = link.getAttribute('data-ind-icon');
+        document.getElementById('modalIndIconWrap').innerHTML = '<i class="' + icon + '"></i>';
+        document.getElementById('modalIndTitle').textContent = name;
+        document.getElementById('modalIndNameInline').textContent = name;
+        document.getElementById('choiceWebsiteBtn').href = '../Industries/demo-website.html?industry=' + slug;
+        document.getElementById('choiceErpBtn').href     = '../Industries/demo-erp.html?industry=' + slug;
+        var openDdMenu = document.querySelector('.dropdown-menu.show');
+        if (openDdMenu) {
+          var ddToggle = openDdMenu.previousElementSibling;
+          if (ddToggle) { bootstrap.Dropdown.getOrCreateInstance(ddToggle).hide(); }
+        }
+        choiceModal.show();
+      });
+    });
+  }());
+  </script>
+@endverbatim
+@endpush
