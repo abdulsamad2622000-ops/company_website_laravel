@@ -1228,7 +1228,56 @@
   .ind-choice-card--accent { background: rgba(0,200,255,.04); border-color: rgba(0,200,255,.12); }
   .ind-choice-card--accent:hover { background: rgba(0,200,255,.12); border-color: #00c8ff; }
   .ind-choice-icon { width: 46px; height: 46px; border-radius: 12px; background: rgba(0,200,255,.1); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 14px; }
+
+/* ═══════════ PRICING — LIGHT THEME (pehle </style> se theek pehle paste) ═══════════ */
+  .pricing-hero{ background:linear-gradient(135deg,#eef3f9 0%,#ffffff 65%) !important; }
+  .pricing-hero::before{ opacity:.3 !important; }
+  .pricing-tabs{ background:#f4f7fb !important; border:1px solid #e6ecf3 !important; }
+  .p-card{ background:#ffffff !important; border:1px solid #e6ecf3 !important; }
+  .p-card.featured{ background:linear-gradient(145deg,#eaf2ff,#ffffff) !important; border:1px solid #2563eb !important; }
+  .enterprise-banner{ background:#f4f7fb !important; border:1px solid #e6ecf3 !important; }
+  .compare-table{ background:#ffffff !important; border:1px solid #e6ecf3 !important; }
+  .compare-table th, .compare-table td{ border-color:#e6ecf3 !important; }
+  .compare-table tr:hover td{ background:#f4f7fb !important; }
+  .cta-strip{ background:linear-gradient(135deg,#eaf2ff 0%,#ffffff 100%) !important; }
+  footer{ background:#f4f7fb !important; border-top:1px solid #e6ecf3 !important; }
+
+  .pricing-tabs-wrap, .hero-badge, .maintenance-note, .btn-cta-outline{ border-color:#e6ecf3 !important; }
+  .card-divider{ background:#e6ecf3 !important; border-color:#e6ecf3 !important; }
+
+  .ptab{ color:#5a6b7e !important; background:transparent !important; }
+  .ptab:hover{ color:#1e3a8a !important; background:#eaf2ff !important; }
+  .ptab.active{ color:#fff !important; }
+
+  .pricing-hero h1, .section-head h2, .card-name, .price-amount, .price-currency,
+  .enterprise-banner h3, .compare-section h3, .cta-strip h2, .footer-brand{ color:#0f172a !important; }
+
+  .pricing-hero .eyebrow, .section-label{ color:#2563eb !important; }
+
+  .pricing-hero p, .section-head p, .card-tier, .card-subtitle, .price-period, .price-note,
+  .features-label, .also-label, .feat-list li, .feat-list li span, .billing-toggle span,
+  .hero-badge, .enterprise-banner p, .e-feat, .compare-table th, .compare-table td,
+  .compare-table td.feat-name, .cta-strip p, .footer-links a, .maintenance-note,
+  .card-cta.ghost, .card-cta.outline{ color:#334455 !important; }
+  .billing-toggle span.active{ color:#0f172a !important; }
+
+  .feat-list li.neg span{ color:#9aa7b5 !important; }
+  .feat-list li.neg .fi i, .compare-table .xmk{ color:#c2cdd8 !important; }
+
+  .card-cta.ghost{ background:#f4f7fb !important; border-color:#e6ecf3 !important; }
+  .card-cta.ghost:hover{ background:#eaf2ff !important; color:#1e3a8a !important; }
+  .card-cta.solid, .enterprise-cta-btn, .btn-cta-primary{ color:#fff !important; }
+
+  .ind-choice-card{ background:#f4f7fb !important; border:1px solid #e6ecf3 !important; }
+  .ind-choice-card:hover, .ind-choice-card--accent{ background:#eaf2ff !important; border-color:#2563eb !important; }
+  .ind-choice-icon{ background:rgba(37,99,235,.10) !important; color:#2563eb !important; }
+  #industryChoiceModal .modal-content{ background:#ffffff !important; border:1px solid #e6ecf3 !important; }
+  #industryChoiceModal h5, #industryChoiceModal h6{ color:#0f172a !important; }
+  #industryChoiceModal p, #industryChoiceModal small{ color:#5a6b7e !important; }
 </style>
+
+
+
 @endsection
 
 @push('scripts')

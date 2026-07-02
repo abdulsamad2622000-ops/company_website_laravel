@@ -9,29 +9,7 @@
 
 @section('content')
 
-<!-- ═══ NAVBAR ═══ -->
-<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img src="{{ asset('img/logo.png') }}" alt="NovaStackhub" style="height:54px;width:auto;object-fit:contain;margin-right:10px;">
-      <span class="brand-text">NovaStackhub</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#svcNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="svcNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="/#hero"><i class="bi bi-house me-1"></i>Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about"><i class="bi bi-info-circle me-1"></i>About Us</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/#services"><i class="bi bi-briefcase me-1"></i>Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#portfolio"><i class="bi bi-grid me-1"></i>Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#blog"><i class="bi bi-newspaper me-1"></i>Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pricing"><i class="bi bi-tag me-1"></i>Pricing</a></li>
-      </ul>
-      <a href="/#cta" class="btn-quote nav-link px-4">CONTACT US &rarr;</a>
-    </div>
-  </div>
-</nav>
+@include('partials.navbar')
 
 <!-- ═══ HERO ═══ -->
 <section class="sd-hero">

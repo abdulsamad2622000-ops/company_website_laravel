@@ -25,6 +25,16 @@
 <script src="{{ asset('assets/js/aos.js') }}"></script>
 <script>if (window.AOS) { AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' }); }</script>
 @stack('scripts')
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('img:not([loading])').forEach(function (im) {
+    im.loading = 'lazy';
+    im.decoding = 'async';
+  });
+});
+</script>
 </body>
 
 </html>

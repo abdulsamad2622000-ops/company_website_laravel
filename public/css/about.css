@@ -1020,3 +1020,35 @@ h1, h2, h3, h4, h5, h6 { color: #16263a !important; }
 ::selection { background: #2563eb !important; color: #fff !important; }
 ::-webkit-scrollbar-track { background: #f4f7fb !important; }
 ::-webkit-scrollbar-thumb { background: #2563eb !important; }
+
+
+
+/* ═══════════ ABOUT — FINAL INLINE CLEANUP (about.css ke END mein paste) ═══════════ */
+
+/* inline dark backgrounds (industry modal etc.) → light */
+[style*="background:#0d1f2d"], [style*="background: #0d1f2d"],
+[style*="background:#080f17"], [style*="background: #080f17"],
+[style*="background:#0b1a26"], [style*="background: #0b1a26"],
+[style*="background:#091520"], [style*="background:#070f18"]{ background:#ffffff !important; }
+
+/* dark inline borders → light */
+[style*="#1a3050"], [style*="#1a2e42"]{ border-color:#e6ecf3 !important; }
+
+/* cyan inline text → blue */
+[style*="color:#00c8ff"], [style*="color: #00c8ff"]{ color:#2563eb !important; }
+
+/* preloader logo stroke */
+.loader-logo svg[stroke="#00c8ff"]{ stroke:#2563eb !important; }
+
+/* ===== industry choice modal → light + readable ===== */
+#industryChoiceModal .modal-content{ background:#ffffff !important; border:1px solid #e6ecf3 !important; }
+#industryChoiceModal .modal-header{ background:linear-gradient(135deg,#eaf2ff,#ffffff) !important; border-bottom:1px solid #e6ecf3 !important; }
+#industryChoiceModal h5, #industryChoiceModal h6{ color:#0f172a !important; }
+#industryChoiceModal p, #industryChoiceModal small{ color:#5a6b7e !important; }
+#industryChoiceModal .btn-close{ filter:none !important; }
+#modalIndIconWrap{ background:rgba(37,99,235,.10) !important; color:#2563eb !important; }
+.ind-choice-card{ background:#f4f7fb !important; border:1px solid #e6ecf3 !important; }
+.ind-choice-card:hover, .ind-choice-card--accent{ background:#eaf2ff !important; border-color:#2563eb !important; }
+.ind-choice-card h6{ color:#0f172a !important; }
+.ind-choice-card p{ color:#5a6b7e !important; }
+.ind-choice-icon{ background:rgba(37,99,235,.10) !important; color:#2563eb !important; }
