@@ -3505,38 +3505,97 @@ div[style*="background: #0d1f2d"] [style*="border-bottom:1px solid #1a3050"] {
 
 
 
-/* ═══════════ FIX: white-space + side-icons visible ═══════════ */
+/* ═══════════ FIX: white-space + side-icons (side-collapsed) ═══════════ */
 html, body { overflow-x: hidden !important; }
 
-/* DESKTOP: centering barqarar, hide via fade (screen se bahar nahi jate) */
+/* DESKTOP: centered; collapsed pe fade (screen se bahar nahi jate) */
 @media (min-width: 769px){
   .side-icons{
     transform: translateY(-50%) !important;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     transition: opacity .3s ease, visibility .3s ease !important;
   }
-  .side-icons.is-open{
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
+  .side-icons.side-collapsed{
+    opacity: 0 !important; visibility: hidden !important; pointer-events: none !important;
   }
 }
 
-/* MOBILE: bottom-left, fade se hide */
+/* MOBILE: bottom-left; collapsed pe fade */
 @media (max-width: 768px){
   .side-icons{
-    display: flex !important;
-    transform: none !important;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: flex !important; transform: none !important;
     transition: opacity .3s ease, visibility .3s ease !important;
   }
-  .side-icons.is-open{
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
+  .side-icons.side-collapsed{
+    opacity: 0 !important; visibility: hidden !important; pointer-events: none !important;
+  }
+}
+
+
+
+/* ═══════════ mobile menu (#navMenu) → LIGHT (sabse END mein paste) ═══════════ */
+@media (max-width: 991.98px){
+  #navMenu{
+    background:#ffffff !important;
+    border:1px solid #e6ecf3 !important;
+    box-shadow:0 12px 30px rgba(15,23,42,.10) !important;
+  }
+  #navMenu .nav-link{ color:#16263a !important; }
+  #navMenu .nav-link.active{ color:#2563eb !important; }
+  #navMenu .nav-link:hover{ background:#eaf2ff !important; color:#1e3a8a !important; border-radius:8px; }
+  #navMenu .dropdown-item{ color:#3a4a5c !important; }
+  #navMenu .dropdown-item:hover{ background:#eaf2ff !important; color:#1e3a8a !important; }
+  #navMenu .dropdown-header, #navMenu .mega-top-label{ color:#2563eb !important; }
+  #navMenu .dropdown-menu, #navMenu .mega-menu, #navMenu .industries-mega{ background:transparent !important; box-shadow:none !important; border:none !important; }
+}
+
+
+
+
+
+/* ═══════════ GLOBAL SOFT / SMOOTH TRANSITIONS (sabse END mein paste) ═══════════ */
+
+/* smooth scroll jab kisi anchor pe jao */
+html{ scroll-behavior: smooth; }
+
+/* har interactive cheez pe soft transition */
+a, button, .btn, .nav-link, .dropdown-item,
+.service-card, .team-card, .blog-card, .p-card,
+.side-icon-btn, .footer-links a, .footer-socials a,
+input, textarea, select, .form-control, .form-select,
+.accordion-button{
+  transition: color .25s ease,
+              background-color .25s ease,
+              border-color .25s ease,
+              box-shadow .25s ease,
+              transform .25s ease,
+              opacity .25s ease !important;
+}
+
+/* ═══════════ mobile toggle (#navMenu) → SMOOTH open (END mein paste) ═══════════ */
+@media (max-width: 991.98px){
+  /* height smoothly animate ho (jhatka na ho) */
+  #navMenu.collapsing{
+    transition: height .34s cubic-bezier(.4,0,.2,1) !important;
+  }
+  /* khulte waqt soft fade + halka slide */
+  #navMenu.show{
+    animation: navMenuOpen .34s cubic-bezier(.4,0,.2,1) both;
+  }
+  @keyframes navMenuOpen{
+    from{ opacity:0; transform: translateY(-10px); }
+    to  { opacity:1; transform: translateY(0); }
+  }
+  /* links bhi halke se aayein (stagger feel) */
+  #navMenu.show .navbar-nav .nav-item{
+    animation: navItemIn .3s ease both;
+  }
+  #navMenu.show .navbar-nav .nav-item:nth-child(1){ animation-delay:.04s; }
+  #navMenu.show .navbar-nav .nav-item:nth-child(2){ animation-delay:.08s; }
+  #navMenu.show .navbar-nav .nav-item:nth-child(3){ animation-delay:.12s; }
+  #navMenu.show .navbar-nav .nav-item:nth-child(4){ animation-delay:.16s; }
+  #navMenu.show .navbar-nav .nav-item:nth-child(5){ animation-delay:.20s; }
+  @keyframes navItemIn{
+    from{ opacity:0; transform: translateX(-8px); }
+    to  { opacity:1; transform: translateX(0); }
   }
 }
