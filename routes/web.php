@@ -21,7 +21,7 @@ Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('servic
 
 // Industries demo platform — server-rendered from app/Data/industries.php
 // Route::get('/industries/{slug}', [IndustryController::class, 'website'])->name('industries.website');
-// Route::get('/industries/{slug}/erp', [IndustryController::class, 'erp'])->name('industries.erp');
+Route::get('/industries/{slug}/erp', [IndustryController::class, 'erp'])->name('industries.erp');
 
 // Lead / contact form submissions (contact | cta | enquiry)
 Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');

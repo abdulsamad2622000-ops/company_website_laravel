@@ -16,44 +16,26 @@
     </div>
   </div>
 
-  <!-- ═══ SIDE ICONS ═══ -->
-  <div class="side-icons">
-    <a href="/" class="side-icon-btn" data-label="Home">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    </a>
-    <a href="#about-story" class="side-icon-btn" data-label="Story">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    </a>
-    <a href="#about-values" class="side-icon-btn" data-label="Values">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-    </a>
-    <a href="#about-team" class="side-icon-btn" data-label="Team">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-    </a>
-    <a href="#about-contact" class="side-icon-btn" data-label="Contact">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-    </a>
-  </div>
+ 
 
-  <!-- TOP BAR -->
-  <div id="topbar">
+ <!-- TOP BAR -->
+<div id="topbar">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-        <div class="d-flex gap-4 flex-wrap">
-          <span><i class="bi bi-geo-alt me-1"></i>55 Main Street, Karachi, Pakistan</span>
-          <a href="mailto:infonovastackhub@gmail.com"><i class="bi bi-envelope me-1"></i>infonovastackhub@gmail.com</a>
-          <a href="tel:+11234568899"><i class="bi bi-telephone me-1"></i>+1 (123) 456 889</a>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="d-flex gap-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=China+Shopping+Center+A.H.+Road+Saddar+Karachi" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-1"></i>Office # M-3-61, Plot # 1, Sheet # SB-5, China Shopping Center, A.H. Road, Saddar, Karachi.</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@novastackhub.com" target="_blank" rel="noopener"><i class="bi bi-envelope me-1"></i>info@novastackhub.com</a>
+                <a href="https://wa.me/923168738819" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>+92 316 8738819</a>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
+                <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            </div>
         </div>
-        <div class="d-flex gap-3 align-items-center">
-          <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg sticky-top">
@@ -767,227 +749,109 @@
   </section>
 
   <!-- ═══ CTA / CONTACT ═══ -->
-  <section class="cta-section" id="about-contact">
-    <div class="cta-particles">
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
-    <div class="container position-relative">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <span class="eyebrow"><i class="bi bi-asterisk"></i> Work With Us</span>
-          <h2 class="section-title">Ready to Build Something <span>Amazing?</span></h2>
-          <p class="section-text">Let's talk about your project. We are ready to bring your vision to life with world-class engineering and design.</p>
-          <div class="cta-info">
-            <div class="cta-info-item">
-              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
-              <div>
-                <div class="cta-info-label">Email</div>
-                <div class="cta-info-val">infonovastackhub@gmail.com</div>
-              </div>
-            </div>
-            <div class="cta-info-item">
-              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.8 12.82 19.79 19.79 0 0 1 1.72 4.25 2 2 0 0 1 3.7 2.1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.17-1.17a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-              <div>
-                <div class="cta-info-label">Phone</div>
-                <div class="cta-info-val">+1 (123) 456 889</div>
-              </div>
-            </div>
-            <div class="cta-info-item">
-              <div class="cta-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div>
-                <div class="cta-info-label">Location</div>
-                <div class="cta-info-val">55 Main Street, Karachi, Pakistan</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="cta-form-wrap">
-            <h4>Send Us A Message</h4>
-            @if (session('lead_success'))
-              <div class="alert alert-success rounded-3" role="alert">{{ session('lead_success') }}</div>
-            @endif
-            @if ($errors->any())
-              <div class="alert alert-danger rounded-3" role="alert">
-                <ul class="mb-0 ps-3">
-                  @foreach ($errors->all() as $e)<li>{{ $e }}</li>@endforeach
-                </ul>
-              </div>
-            @endif
-            <form id="ctaForm" method="POST" action="{{ route('leads.store') }}">
-              @csrf
-              <input type="hidden" name="type" value="cta">
-              <div class="d-none" aria-hidden="true">
-                <input type="text" name="website" tabindex="-1" autocomplete="off">
-              </div>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="input-wrap">
-                    <i class="bi bi-person"></i>
-                    <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="input-wrap">
-                    <i class="bi bi-envelope"></i>
-                    <input type="email" name="email" placeholder="Your Email" value="{{ old('email') }}" required>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="input-wrap">
-                    <i class="bi bi-briefcase"></i>
-                    <select name="service">
-                      <option>Choose Service</option>
-                      <option>Web Development</option>
-                      <option>Mobile App</option>
-                      <option>UI/UX Design</option>
-                      <option>Cloud Solutions</option>
-                      <option>AI &amp; Machine Learning</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="input-wrap">
-                    <i class="bi bi-chat-text"></i>
-                    <textarea name="message" rows="4" placeholder="Your Message">{{ old('message') }}</textarea>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn-primary-c w-100">Send Message &rarr;</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  @include('partials.contact')
 
   <!-- ═══ FOOTER ═══ -->
-  <footer class="about-footer">
-    <div class="container">
+  <footer class="footer-section">
+  <div class="big-bg-text light-text">NovaStackhub</div>
+  <div class="container position-relative">
+    <div class="row gy-5 gx-lg-5">
 
-      <!-- TOP ROW -->
-      <div class="row gy-5 gx-lg-5">
-
-        <!-- Col 1: Brand + Newsletter -->
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="footer-brand-wrap">
-            <img src="/img/logo.png" alt="NovaStackhub" class="footer-logo">
-            <span class="footer-brand-name">NovaStack<span>hub</span></span>
+      <!-- Col 1: Brand + Newsletter -->
+      <div class="col-lg-4" data-aos="fade-up">
+        <div class="footer-brand-wrap">
+          <img src="/img/logo.png" alt="NovaStackhub" class="footer-logo">
+          <span class="footer-brand-name">NovaStack<span>hub</span></span>
+        </div>
+        <p class="footer-tagline">Building the future with powerful software solutions. Your trusted technology partner across 40+ industries worldwide.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.4a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+        <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
+        <form class="footer-subscribe-form">
+          <div class="footer-input-wrap">
+            <i class="bi bi-envelope"></i>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
           </div>
-          <p class="footer-tagline">Building the future with powerful software solutions. Your trusted technology partner across 40+ industries worldwide.</p>
-          <div class="footer-socials">
-            <a href="#" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" aria-label="X / Twitter">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="#" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#0d1f2d" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-          </div>
-          <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
-          <form class="footer-subscribe-form">
-            <div class="footer-input-wrap">
-              <i class="bi bi-envelope"></i>
-              <input type="email" placeholder="Enter your email">
-              <button type="submit" aria-label="Subscribe">
-                <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-          </form>
-          <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
-        </div>
+        </form>
+        <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
+      </div>
 
-        <!-- Col 2: Quick Links -->
-        <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-          <h6 class="footer-col-title">Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="/"><i class="bi bi-chevron-right"></i>Home</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>About Us</a></li>
-            <li><a href="/#services"><i class="bi bi-chevron-right"></i>Services</a></li>
-            <li><a href="#about-team"><i class="bi bi-chevron-right"></i>Our Team</a></li>
-            <li><a href="/#blog"><i class="bi bi-chevron-right"></i>Blog</a></li>
-            <li><a href="#about-contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Services -->
-        <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="200">
-          <h6 class="footer-col-title">Services</h6>
-          <ul class="footer-links">
-            <li><a href="#"><i class="bi bi-chevron-right"></i>Web Development</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>Mobile Apps</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>UI/UX Design</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>Cloud Solutions</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>AI &amp; ML</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i>Cybersecurity</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact -->
-        <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
-          <h6 class="footer-col-title">Contact Us</h6>
-          <ul class="footer-contact-list">
-            <li>
-              <i class="bi bi-geo-alt"></i>
-              <span>55 Main Street,<br>Karachi, Pakistan</span>
-            </li>
-            <li>
-              <i class="bi bi-envelope"></i>
-              <a href="mailto:infonovastackhub@gmail.com">infonovastackhub@gmail.com</a>
-            </li>
-            <li>
-              <i class="bi bi-telephone"></i>
-              <a href="tel:+11234568899">+1 (123) 456 889</a>
-            </li>
-            <li>
-              <i class="bi bi-clock"></i>
-              <span>Mon–Fri: 9am – 6pm</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Col 5: QR Code -->
-        <div class="col-lg-2" data-aos="fade-up" data-aos-delay="400">
-          <h6 class="footer-col-title">Scan &amp; Connect</h6>
-          <div class="footer-qr-card">
-            <img src="/images/novastack_qr.png" alt="NovaStackhub QR Code" class="footer-qr-img">
-            <div class="footer-qr-label">
-              <i class="bi bi-qr-code"></i>
-              Scan to Visit
-            </div>
-          </div>
-          <p class="footer-qr-note">Scan QR code to connect with NovaStackhub instantly</p>
-        </div>
-
-      </div><!-- /row -->
-
-      <hr class="footer-divider">
-
-      <!-- BOTTOM BAR -->
-      <div class="footer-bottom-bar">
-        <p>&copy; 2026 <strong>NovaStack Hub</strong> &mdash; All Rights Reserved.</p>
-        <ul class="footer-bottom-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#about-contact">Contact</a></li>
+      <!-- Col 2: Quick Links -->
+      <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <h6 class="footer-col-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="/#hero"><i class="bi bi-chevron-right"></i>Home</a></li>
+          <li><a href="/about"><i class="bi bi-chevron-right"></i>About Us</a></li>
+          <li><a href="/#services"><i class="bi bi-chevron-right"></i>Services</a></li>
+          <li><a href="/#contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
         </ul>
       </div>
 
-    </div>
-  </footer>
+      <!-- Col 3: Services -->
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <h6 class="footer-col-title">Services</h6>
+        <ul class="footer-links">
+          <li><a href="/services/web-application-development"><i class="bi bi-chevron-right"></i>Web Development</a></li>
+          <li><a href="/services/android-app-development"><i class="bi bi-chevron-right"></i>Mobile Apps</a></li>
+          <li><a href="/services/ui-ux-design"><i class="bi bi-chevron-right"></i>UI/UX Design</a></li>
+          <li><a href="/services/cloud-solutions"><i class="bi bi-chevron-right"></i>Cloud Solutions</a></li>
+          
+          <li><a href="/services/cybersecurity"><i class="bi bi-chevron-right"></i>Cybersecurity</a></li>
+        </ul>
+      </div>
 
+      <!-- Col 4: Contact -->
+     <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <h6 class="footer-col-title">Contact Us</h6>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <a href="https://www.google.com/maps/search/?api=1&query=China+Shopping+Center+A.H.+Road+Saddar+Karachi" target="_blank" rel="noopener">Office # M-3-61, China Shopping Center,<br>A.H. Road, Saddar, Karachi.</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@novastackhub.com" target="_blank" rel="noopener">info@novastackhub.com</a>
+          </li>
+          <li>
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://wa.me/923168738819" target="_blank" rel="noopener">+92 316 8738819</a>
+          </li>
+          <li>
+            <i class="bi bi-clock"></i>
+            <span>Mon–Thu &amp; Sat: 11:30 AM – 7:30 PM<br>Fri: 3:00 PM – 7:30 PM &nbsp;·&nbsp; Sun: Closed</span>
+          </li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom-bar">
+      <p>&copy; 2026 <strong>Novastackhub</strong> &mdash; All Rights Reserved.</p>
+      <ul class="footer-bottom-links">
+        <li><a href="/#hero">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
   <!-- Back To Top -->
   <button id="backToTop">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>

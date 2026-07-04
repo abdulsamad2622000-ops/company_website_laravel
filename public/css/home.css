@@ -3599,3 +3599,54 @@ input, textarea, select, .form-control, .form-select,
     to  { opacity:1; transform: translateX(0); }
   }
 }
+
+
+
+/* Services link click → /#services pe jaye */
+.navbar-nav .nav-link.dropdown-toggle{ pointer-events: auto; }
+
+
+
+
+
+/* ═══ sections remove (site-wide) ═══ */
+.team-section{ display:none !important; }   /* Meet Our Experience Members — home + about dono */
+.blog-section{ display:none !important; }   /* Read Our Latest News & Blog */
+.hero-section{ display:none !important; }   /* Premier Tech Innovations */
+
+
+
+
+/* ═══ logo size bara ═══ */
+.navbar-brand img{ height:60px !important; width:auto !important; }
+.footer-logo{ height:64px !important; width:auto !important; }
+/* ═══ loader ring + logo center fix ═══ */
+.loader-ring{ width:140px !important; height:140px !important; }
+.loader-ring svg{ width:140px !important; height:140px !important; }
+.loader-logo{ margin:0 !important; display:flex !important; align-items:center; justify-content:center; }
+
+
+.navbar-brand{ display:flex; align-items:center; }
+/* ═══ brand tagline (force visible) ═══ */
+.navbar-brand{ display:flex !important; align-items:center; }
+.brand-text-wrap{ display:flex !important; flex-direction:column !important; line-height:1.1; }
+.brand-text-wrap .brand-tagline{
+  font-size:10px !important;
+  font-weight:500 !important;
+  color:#2563eb !important;
+  -webkit-text-fill-color:#2563eb !important;
+  background:none !important;
+  letter-spacing:.4px;
+  margin-top:1px;
+  display:block !important;
+}
+.footer-brand-tagline{
+  display:block !important;
+  font-size:12px !important;
+  font-weight:500 !important;
+  color:#2563eb !important;
+  -webkit-text-fill-color:#2563eb !important;
+  background:none !important;
+  letter-spacing:.4px;
+  margin-top:2px;
+}

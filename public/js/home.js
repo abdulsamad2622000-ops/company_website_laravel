@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     document.getElementById('loader').classList.add('hidden');
     animateCounters();
-  }, 2200);
+  }, 300);
 });
 
 const obs = new IntersectionObserver((entries) => {

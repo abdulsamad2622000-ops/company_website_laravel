@@ -5,7 +5,10 @@
     <a class="navbar-brand" href="/">
       <img src="/img/logo.png" alt="NovaStackhub Logo"
         style="height:60px;width:auto;object-fit:contain;margin-right:10px;">
-      <span class="brand-text">NovaStackhub</span>
+     <span class="brand-text-wrap">
+  <span class="brand-text">NovaStackhub</span>
+  <span class="brand-tagline">Empowering Digital Vision</span>
+</span>
     </a>
 
     <button class="navbar-toggler" type="button"

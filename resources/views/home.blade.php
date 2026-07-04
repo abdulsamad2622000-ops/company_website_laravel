@@ -8,75 +8,44 @@
 
 @section('content')
 <!-- LOADER -->
-    <div id="loader">
-        <div class="loader-ring">
-            <svg width="96" height="96" viewBox="0 0 96 96">
-                <defs>
-                    <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#00c8ff" />
-                        <stop offset="100%" stop-color="#00c8ff" stop-opacity="0" />
-                    </linearGradient>
-                </defs>
-                <circle cx="48" cy="48" r="43" fill="none" stroke="#1a2e42" stroke-width="3" />
-                <path d="M 48 5 A 43 43 0 0 1 91 48" fill="none" stroke="url(#rg)" stroke-width="3"
-                    stroke-linecap="round" />
-            </svg>
-            <div class="loader-logo">
-                <img src="/img/logo.png" alt="NovaStackhub Logo" style="height: 75px; width: 75px; object-fit: contain;">
+<div id="loader">
+    <div class="loader-ring">
+        <svg width="140" height="140" viewBox="0 0 140 140">
+            <defs>
+                <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00c8ff" />
+                    <stop offset="100%" stop-color="#00c8ff" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <circle cx="70" cy="70" r="63" fill="none" stroke="#1a2e42" stroke-width="4" />
+            <path d="M 70 7 A 63 63 0 0 1 133 70" fill="none" stroke="url(#rg)" stroke-width="4"
+                stroke-linecap="round" />
+        </svg>
+        <div class="loader-logo">
+            <img src="/img/logo.png" alt="Novastackhub Logo" style="height: 74px; width: auto; object-fit: contain;">
+        </div>
+    </div>
+</div>
+
+
+<!-- TOP BAR -->
+<div id="topbar">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="d-flex gap-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=China+Shopping+Center+A.H.+Road+Saddar+Karachi" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-1"></i>Office # M-3-61, Plot # 1, Sheet # SB-5, China Shopping Center, A.H. Road, Saddar, Karachi.</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@novastackhub.com" target="_blank" rel="noopener"><i class="bi bi-envelope me-1"></i>info@novastackhub.com</a>
+                <a href="https://wa.me/923168738819" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>+92 316 8738819</a>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
+                <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </div>
-
-    <!-- SIDE ICONS -->
-    <div class="side-icons">
-      <a href="/about" class="side-icon-btn" data-label="About">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-        </svg>
-      </a>
-      <a href="#services" class="side-icon-btn" data-label="Services">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
-          <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
-        </svg>
-      </a>
-      <a href="#team" class="side-icon-btn" data-label="Team">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-        </svg>
-      </a>
-      <a href="#contact" class="side-icon-btn" data-label="Contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-        </svg>
-      </a>
-      <a href="#blog" class="side-icon-btn" data-label="Blog">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-        </svg>
-      </a>
-    </div>
-
-    <!-- TOP BAR -->
-    <div id="topbar">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                <div class="d-flex gap-4 flex-wrap">
-                    <span><i class="bi bi-geo-alt me-1"></i>55 Main Street, Karachi, Pakistan</span>
-                    <a href="https://infonovastackhub.com"><i class="bi bi-envelope me-1"></i>infonovastackhub@gmail.com</a>
-                    <a href="tel:+11234568899"><i class="bi bi-telephone me-1"></i>+1 (123) 456 889</a>
-                </div>
-                <div class="d-flex gap-3 align-items-center">
-                    <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
     <!-- NAVBAR -->
     <!-- <nav class="navbar navbar-expand-lg sticky-top">
@@ -122,7 +91,7 @@
     <a class="navbar-brand" href="#">
       <img src="/img/logo.png" alt="NovaStackhub Logo"
         style="height:60px;width:auto;object-fit:contain;margin-right:10px;">
-      <span class="brand-text">NovaStackhub</span>
+      <span class="brand-text">Novastackhub</span>
     </a>
  
     <button class="navbar-toggler" type="button"
@@ -395,7 +364,7 @@
                             </div>
                             <div class="service-title">Web Development</div>
                             <div class="service-desc">High-performance websites and web apps built with modern frameworks and best practices.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/web-application-development" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -409,7 +378,7 @@
                             </div>
                             <div class="service-title">Mobile Applications</div>
                             <div class="service-desc">Native and cross-platform apps for iOS and Android that deliver seamless user experiences.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/android-app-development" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -423,7 +392,7 @@
                             </div>
                             <div class="service-title">Cloud Solutions</div>
                             <div class="service-desc">Scalable cloud architecture on AWS, Azure, and GCP to power your digital infrastructure.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/cloud-solutions" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -437,7 +406,7 @@
                             </div>
                             <div class="service-title">Cybersecurity</div>
                             <div class="service-desc">Comprehensive security audits, penetration testing, and ongoing threat monitoring.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/cybersecurity" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -451,7 +420,7 @@
                             </div>
                             <div class="service-title">AI &amp; Machine Learning</div>
                             <div class="service-desc">Custom AI models and intelligent automation solutions that drive real business value.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/ai-machine-learning" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -465,7 +434,7 @@
                             </div>
                             <div class="service-title">Data Engineering</div>
                             <div class="service-desc">Robust data pipelines, warehousing, and analytics platforms for data-driven decisions.</div>
-                            <a href="#" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                            <a href="/services/data-engineering" class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -684,7 +653,7 @@
           <h4>Custom Software Development</h4>
           <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
           <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" class="service-img" alt="Custom Software Development">
-          <a href="#" class="service-plus">
+          <a href="/services/custom-software-development" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
         </div>
@@ -700,7 +669,7 @@
           <h4>Outsourcing Development</h4>
           <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" class="service-img" alt="Outsourcing Development">
-          <a href="#" class="service-plus">
+          <a href="/services/enterprise-software" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
         </div>
@@ -716,7 +685,7 @@
           <h4>Software Product Development</h4>
           <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
           <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80" class="service-img" alt="Software Product Development">
-          <a href="#" class="service-plus">
+          <a href="/services/saas-product-development" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
         </div>
@@ -747,7 +716,7 @@
 </div>
 
 <!-- ============ TEAM SECTION ============ -->
-<section class="team-section" id="team">
+<!-- <section class="team-section" id="team">
   <div class="container">
     <div class="row align-items-center mb-5">
       <div class="col-lg-7" data-aos="fade-right">
@@ -790,82 +759,92 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ============ FEATURES / WHAT WE DO SLIDER ============ -->
 <section class="features-section">
   <div class="container">
-    <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-inner">
+
+        <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="row align-items-center g-5">
             <div class="col-lg-4">
-              <h3 class="feature-title">Mobile Application <span>Design</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">Mobile App <span>UI/UX</span></h3>
+              <p>Beautiful, intuitive mobile interfaces designed for smooth experiences on iOS and Android.</p>
+              <a href="/services/mobile-app-ui-ux" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
             <div class="col-lg-4">
-              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" class="rounded-4 w-100 feature-img" alt="Mobile Design">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" class="rounded-4 w-100 feature-img" alt="Mobile App UI/UX">
             </div>
             <div class="col-lg-4">
               <h3 class="feature-title">UI/UX <span>Design</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <p>User-centered designs that turn complex ideas into clean, easy-to-use products.</p>
+              <a href="/services/ui-ux-design" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
           </div>
         </div>
+
+        <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="row align-items-center g-5">
             <div class="col-lg-4">
-              <h3 class="feature-title">Cloud <span>Computing</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">Frontend <span>Development</span></h3>
+              <p>Pixel-perfect, responsive interfaces built with React, Vue, and modern frameworks.</p>
+              <a href="/services/frontend-development" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
             <div class="col-lg-4">
-              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80" class="rounded-4 w-100 feature-img" alt="Cloud Computing">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80" class="rounded-4 w-100 feature-img" alt="Frontend Development">
             </div>
             <div class="col-lg-4">
-              <h3 class="feature-title">Cyber <span>Security</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">Backend <span>Development</span></h3>
+              <p>Secure, scalable server-side systems, APIs, and databases that power your app.</p>
+              <a href="/services/backend-development" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
           </div>
         </div>
+
+        <!-- Slide 3 -->
         <div class="carousel-item">
           <div class="row align-items-center g-5">
             <div class="col-lg-4">
-              <h3 class="feature-title">Web <span>Development</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">E-Commerce <span>Solutions</span></h3>
+              <p>Complete online stores with secure payments, carts, and inventory management.</p>
+              <a href="/services/e-commerce-solutions" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
             <div class="col-lg-4">
-              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" class="rounded-4 w-100 feature-img" alt="Web Development">
+              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" class="rounded-4 w-100 feature-img" alt="E-Commerce Solutions">
             </div>
             <div class="col-lg-4">
-              <h3 class="feature-title">Machine Learning <span>&amp; AI</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">API <span>Integration</span></h3>
+              <p>Seamless integration with third-party services and custom API development.</p>
+              <a href="/services/api-development-integration" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
           </div>
         </div>
+
+        <!-- Slide 4 -->
         <div class="carousel-item">
           <div class="row align-items-center g-5">
             <div class="col-lg-4">
-              <h3 class="feature-title">Analytic &amp; <span>Engineering</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <h3 class="feature-title">CRM <span>Development</span></h3>
+              <p>Custom CRM systems to manage leads, customers, and sales in one place.</p>
+              <a href="/services/crm-development" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
             <div class="col-lg-4">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" class="rounded-4 w-100 feature-img" alt="AI Analytics">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" class="rounded-4 w-100 feature-img" alt="IT Consulting">
             </div>
             <div class="col-lg-4">
               <h3 class="feature-title">IT <span>Consulting</span></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque seeney laudantium totam</p>
-              <a href="#" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
+              <p>Expert guidance on technology strategy, architecture, and digital transformation.</p>
+              <a href="/services/it-consulting" class="feature-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></a>
             </div>
           </div>
         </div>
+
       </div>
+
       <div class="carousel-dots">
         <button data-bs-target="#featuresCarousel" data-bs-slide-to="0" class="active"></button>
         <button data-bs-target="#featuresCarousel" data-bs-slide-to="1"></button>
@@ -938,70 +917,7 @@
 </section>
 
 <!-- ============ CONTACT / WORK INQUIRY ============ -->
-<section class="contact-section" id="contact">
-  <div class="row g-0">
-    <div class="col-lg-6 contact-img-col" data-aos="fade-right">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Work with us">
-      <div class="contact-overlay">
-        <span class="eyebrow">Work Inquiry</span>
-        <h2>Let's Work For your Next Projects ?</h2>
-        <a href="#contact" class="btn btn-dark-outline rounded-pill mt-3">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
-      </div>
-    </div>
-    <div class="col-lg-6 contact-form-col" data-aos="fade-left">
-      <div class="contact-form-wrap">
-        <h2>Need Help For Project!</h2>
-        <p>We are ready to help your next projects, let's work together</p>
-        @if (session('lead_success'))
-          <div class="alert alert-success rounded-3" role="alert">{{ session('lead_success') }}</div>
-        @endif
-        @if ($errors->any())
-          <div class="alert alert-danger rounded-3" role="alert">
-            <ul class="mb-0 ps-3">
-              @foreach ($errors->all() as $e)<li>{{ $e }}</li>@endforeach
-            </ul>
-          </div>
-        @endif
-        <form id="contactForm" method="POST" action="{{ route('leads.store') }}">
-          @csrf
-          <input type="hidden" name="type" value="contact">
-          <div class="d-none" aria-hidden="true">
-            <input type="text" name="website" tabindex="-1" autocomplete="off">
-          </div>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="input-icon-group">
-                <input type="text" name="name" class="form-control" placeholder="Name" value="{{ old('name') }}" required>
-                <i class="bi bi-person"></i>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="input-icon-group">
-                <input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}" required>
-                <i class="bi bi-envelope"></i>
-              </div>
-            </div>
-            <div class="col-12">
-              <select name="service" class="form-select">
-                <option selected>Choose Services</option>
-                <option>Web Development</option>
-                <option>UI/UX Design</option>
-                <option>Cloud Computing</option>
-                <option>Cyber Security</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <textarea name="message" class="form-control" rows="4" placeholder="Message">{{ old('message') }}</textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-cyan rounded-pill px-4">Send Message Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+@include('partials.contact')
 
 <!-- ============ BLOG SECTION ============ -->
 <section class="blog-section" id="blog">
@@ -1048,33 +964,26 @@
 <!-- ============ FOOTER ============ -->
 <footer class="footer-section">
   <div class="big-bg-text light-text">NovaStackhub</div>
+  
   <div class="container position-relative">
-
-    <!-- TOP ROW -->
     <div class="row gy-5 gx-lg-5">
 
       <!-- Col 1: Brand + Newsletter -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+      <div class="col-lg-4" data-aos="fade-up">
         <div class="footer-brand-wrap">
           <img src="/img/logo.png" alt="NovaStackhub" class="footer-logo">
           <span class="footer-brand-name">NovaStack<span>hub</span></span>
         </div>
         <p class="footer-tagline">Building the future with powerful software solutions. Your trusted technology partner across 40+ industries worldwide.</p>
         <div class="footer-socials">
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
-          <a href="#" aria-label="X / Twitter">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.4a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
           </a>
-          <a href="#" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#0d1f2d" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
         </div>
         <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
@@ -1082,9 +991,7 @@
           <div class="footer-input-wrap">
             <i class="bi bi-envelope"></i>
             <input type="email" placeholder="Enter your email">
-            <button type="submit" aria-label="Subscribe">
-              <i class="bi bi-arrow-right"></i>
-            </button>
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
           </div>
         </form>
         <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
@@ -1094,77 +1001,63 @@
       <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
         <h6 class="footer-col-title">Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="#hero"><i class="bi bi-chevron-right"></i>Home</a></li>
+          <li><a href="/#hero"><i class="bi bi-chevron-right"></i>Home</a></li>
           <li><a href="/about"><i class="bi bi-chevron-right"></i>About Us</a></li>
-          <li><a href="#services"><i class="bi bi-chevron-right"></i>Services</a></li>
-          <li><a href="#team"><i class="bi bi-chevron-right"></i>Our Team</a></li>
-          <li><a href="#blog"><i class="bi bi-chevron-right"></i>Blog</a></li>
-          <li><a href="#contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
+          <li><a href="/#services"><i class="bi bi-chevron-right"></i>Services</a></li>
+          <li><a href="/#contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
         </ul>
       </div>
 
       <!-- Col 3: Services -->
-      <div class="col-6 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
         <h6 class="footer-col-title">Services</h6>
         <ul class="footer-links">
-          <li><a href="#"><i class="bi bi-chevron-right"></i>Web Development</a></li>
-          <li><a href="#"><i class="bi bi-chevron-right"></i>Mobile Apps</a></li>
-          <li><a href="#"><i class="bi bi-chevron-right"></i>UI/UX Design</a></li>
-          <li><a href="#"><i class="bi bi-chevron-right"></i>Cloud Solutions</a></li>
-          <li><a href="#"><i class="bi bi-chevron-right"></i>AI &amp; ML</a></li>
-          <li><a href="#"><i class="bi bi-chevron-right"></i>Cybersecurity</a></li>
+          <li><a href="/services/web-application-development"><i class="bi bi-chevron-right"></i>Web Development</a></li>
+          <li><a href="/services/android-app-development"><i class="bi bi-chevron-right"></i>Mobile Apps</a></li>
+          <li><a href="/services/ui-ux-design"><i class="bi bi-chevron-right"></i>UI/UX Design</a></li>
+          <li><a href="/services/cloud-solutions"><i class="bi bi-chevron-right"></i>Cloud Solutions</a></li>
+          
+          <li><a href="/services/cybersecurity"><i class="bi bi-chevron-right"></i>Cybersecurity</a></li>
         </ul>
       </div>
 
       <!-- Col 4: Contact -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+     <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <h6 class="footer-col-title">Contact Us</h6>
         <ul class="footer-contact-list">
           <li>
             <i class="bi bi-geo-alt"></i>
-            <span>55 Main Street,<br>Karachi, Pakistan</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=China+Shopping+Center+A.H.+Road+Saddar+Karachi" target="_blank" rel="noopener">Office # M-3-61, China Shopping Center,<br>A.H. Road, Saddar, Karachi.</a>
           </li>
           <li>
             <i class="bi bi-envelope"></i>
-            <a href="mailto:infonovastackhub@gmail.com">infonovastackhub@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@novastackhub.com" target="_blank" rel="noopener">info@novastackhub.com</a>
           </li>
           <li>
-            <i class="bi bi-telephone"></i>
-            <a href="tel:+11234568899">+1 (123) 456 889</a>
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://wa.me/923168738819" target="_blank" rel="noopener">+92 316 8738819</a>
           </li>
           <li>
             <i class="bi bi-clock"></i>
-            <span>Mon–Fri: 9am – 6pm</span>
+            <span>Mon–Thu &amp; Sat: 11:30 AM – 7:30 PM<br>Fri: 3:00 PM – 7:30 PM &nbsp;·&nbsp; Sun: Closed</span>
           </li>
         </ul>
       </div>
 
-      <!-- Col 5: QR Code -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-delay="400">
-        <h6 class="footer-col-title">Scan &amp; Connect</h6>
-        <div class="footer-qr-card">
-          <img src="/images/novastack_qr.png" alt="NovaStackhub QR Code" class="footer-qr-img">
-          <div class="footer-qr-label">
-            <i class="bi bi-qr-code"></i>
-            Scan to Visit
-          </div>
-        </div>
-        <p class="footer-qr-note">Scan QR code to connect with NovaStackhub instantly</p>
-      </div>
+      
 
-    </div><!-- /row -->
+    </div>
 
     <hr class="footer-divider">
 
-    <!-- BOTTOM BAR -->
     <div class="footer-bottom-bar">
-      <p>&copy; 2026 <strong>NovaStack Hub</strong> &mdash; All Rights Reserved.</p>
+      <p>&copy; 2026 <strong>Novastackhub</strong> &mdash; All Rights Reserved.</p>
       <ul class="footer-bottom-links">
-        <li><a href="#hero">Home</a></li>
+        <li><a href="/#hero">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
     </div>
 

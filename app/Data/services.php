@@ -8,7 +8,91 @@
  | Keyed by URL slug -> rendered at /services/{slug}
  */
 
-return [
+return ['ai-machine-learning' => [
+        'slug' => 'ai-machine-learning',
+        'name' => 'AI & Machine Learning',
+        'category' => 'AI & Data',
+        'icon' => 'bi bi-cpu',
+        'tagline' => 'Custom AI models that drive real business value.',
+        'description' => 'We build intelligent, production-ready AI and machine learning solutions tailored to your business. From predictive analytics and recommendation engines to computer vision, natural language processing, and generative AI, we help you turn raw data into automated decisions and measurable results.',
+        'features' => [
+            'Custom machine learning model development',
+            'Predictive analytics & forecasting',
+            'Natural Language Processing (NLP) & chatbots',
+            'Computer vision & image recognition',
+            'Generative AI & LLM integration',
+            'Recommendation & personalisation engines',
+            'MLOps: deployment, monitoring & retraining',
+            'Data labelling & model training pipelines',
+        ],
+        'benefits' => [
+            [
+                'icon' => 'bi bi-graph-up-arrow',
+                'title' => 'Enterprises',
+                'desc' => 'Automate decisions and unlock insights from big data',
+            ],
+            [
+                'icon' => 'bi bi-robot',
+                'title' => 'Startups',
+                'desc' => 'Add smart AI features that set your product apart',
+            ],
+            [
+                'icon' => 'bi bi-people',
+                'title' => 'SMBs',
+                'desc' => 'Use chatbots and automation to scale without hiring',
+            ],
+        ],
+        'whyUs' => [
+            'Production-grade models, not just prototypes',
+            'End-to-end: data prep, training, deployment & monitoring',
+            'Transparent, explainable AI you can trust',
+            'Integrates with your existing tools & workflows',
+            'NDA-protected — your data stays confidential',
+        ],
+    ],
+    'data-engineering' => [
+        'slug' => 'data-engineering',
+        'name' => 'Data Engineering',
+        'category' => 'AI & Data',
+        'icon' => 'bi bi-database',
+        'tagline' => 'Robust data pipelines for data-driven decisions.',
+        'description' => 'We design and build reliable data infrastructure — from ingestion and warehousing to analytics-ready pipelines. Our data engineering solutions ensure your data is clean, secure, and available in real time, powering dashboards, reporting, and AI systems across your organisation.',
+        'features' => [
+            'ETL / ELT pipeline design & automation',
+            'Data warehouse & data lake architecture',
+            'Real-time & batch data processing',
+            'Data cleaning, validation & quality checks',
+            'BI dashboards & reporting integration',
+            'Cloud data platforms (BigQuery, Snowflake, Redshift)',
+            'API & third-party data integration',
+            'Scalable, secure & compliant storage',
+        ],
+        'benefits' => [
+            [
+                'icon' => 'bi bi-bar-chart',
+                'title' => 'Enterprises',
+                'desc' => 'Unify scattered data into one reliable source of truth',
+            ],
+            [
+                'icon' => 'bi bi-speedometer2',
+                'title' => 'Startups',
+                'desc' => 'Set up analytics right from day one, built to scale',
+            ],
+            [
+                'icon' => 'bi bi-diagram-3',
+                'title' => 'SMBs',
+                'desc' => 'Turn raw spreadsheets into automated dashboards',
+            ],
+        ],
+        'whyUs' => [
+            'Pipelines built for reliability and scale',
+            'Clean, well-documented and maintainable data flows',
+            'Real-time monitoring & data quality checks',
+            'Cloud-native, cost-optimised architecture',
+            'Milestone-based delivery with clear timelines',
+        ],
+    ],
+
     'custom-software-development' => [
         'slug' => 'custom-software-development',
         'name' => 'Custom Software Development',
