@@ -841,13 +841,18 @@
           </a>
         </div>
         <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
-        <form class="footer-subscribe-form">
-          <div class="footer-input-wrap">
-            <i class="bi bi-envelope"></i>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
-          </div>
-        </form>
+    <form class="footer-subscribe-form" id="newsletterForm" method="POST" action="{{ route('leads.store') }}">
+  @csrf
+  <input type="hidden" name="type" value="newsletter">
+  <input type="hidden" name="name" value="Newsletter Subscriber">
+  <div class="d-none"><input type="text" name="website" tabindex="-1"></div>
+  <div class="footer-input-wrap">
+    <i class="bi bi-envelope"></i>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+  </div>
+  <div id="newsletterMsg" class="mt-2" style="font-size:13px;"></div>
+</form>
         <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
       </div>
 
@@ -1111,16 +1116,13 @@
       var name = link.getAttribute('data-ind-name').replace(/&amp;/g, '&');
       var icon = link.getAttribute('data-ind-icon');
 
-      /* populate modal content */
       document.getElementById('modalIndIconWrap').innerHTML    = '<i class="' + icon + '"></i>';
       document.getElementById('modalIndTitle').textContent     = name;
       document.getElementById('modalIndNameInline').textContent = name;
 
-      /* set link href targets (relative from "Home section/" folder) */
       document.getElementById('choiceWebsiteBtn').href = '../Industries/demo-website.html?industry=' + slug;
       document.getElementById('choiceErpBtn').href     = '../Industries/demo-erp.html?industry='    + slug;
 
-      /* close any open Bootstrap dropdown */
       var openDdMenu = document.querySelector('.dropdown-menu.show');
       if (openDdMenu) {
         var ddToggle = openDdMenu.previousElementSibling;
@@ -1134,6 +1136,46 @@
     });
   });
 }());
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('newsletterForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msgBox = document.getElementById('newsletterMsg');
+    var btn = form.querySelector('button[type="submit"]');
+    var formData = new FormData(form);
+
+    btn.disabled = true;
+    msgBox.textContent = '';
+
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function (res) { return res.json().then(function (data) { return { status: res.status, data: data }; }); })
+    .then(function (result) {
+      btn.disabled = false;
+      if (result.status >= 200 && result.status < 300) {
+        msgBox.style.color = '#22c55e';
+        msgBox.textContent = 'Thanks for subscribing! You will now receive our updates.';
+        form.reset();
+      } else {
+        msgBox.style.color = '#ef4444';
+        msgBox.textContent = (result.data && result.data.message) ? result.data.message : 'Something went wrong. Please try again.';
+      }
+    })
+    .catch(function () {
+      btn.disabled = false;
+      msgBox.style.color = '#ef4444';
+      msgBox.textContent = 'Something went wrong. Please try again.';
+    });
+  });
+});
 </script>
 @endverbatim
 @endpush

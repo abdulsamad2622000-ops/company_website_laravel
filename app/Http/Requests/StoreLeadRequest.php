@@ -15,7 +15,7 @@ class StoreLeadRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'type'         => ['required', Rule::in(['contact', 'cta', 'enquiry'])],
+           'type' => ['required', \Illuminate\Validation\Rule::in(['contact', 'cta', 'enquiry', 'newsletter'])],
             'name'         => ['required', 'string', 'max:150'],
             'email'        => ['required', 'email', 'max:190'],
             'phone'        => ['nullable', 'string', 'max:50'],

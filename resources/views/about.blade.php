@@ -633,13 +633,18 @@
           </a>
         </div>
         <h6 class="footer-col-title mt-4">Subscribe Newsletter</h6>
-        <form class="footer-subscribe-form">
-          <div class="footer-input-wrap">
-            <i class="bi bi-envelope"></i>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
-          </div>
-        </form>
+     <form class="footer-subscribe-form" id="newsletterForm" method="POST" action="{{ route('leads.store') }}">
+  @csrf
+  <input type="hidden" name="type" value="newsletter">
+  <input type="hidden" name="name" value="Newsletter Subscriber">
+  <div class="d-none"><input type="text" name="website" tabindex="-1"></div>
+  <div class="footer-input-wrap">
+    <i class="bi bi-envelope"></i>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+  </div>
+  <div id="newsletterMsg" class="mt-2" style="font-size:13px;"></div>
+</form>
         <p class="footer-note">By subscribing you accept our <a href="#">Privacy Policy</a></p>
       </div>
 
@@ -795,6 +800,8 @@
       });
     });
   }());
+
+  
   </script>
 @endverbatim
 @endpush

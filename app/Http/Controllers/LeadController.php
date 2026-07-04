@@ -31,8 +31,26 @@ class LeadController extends Controller
             }
         }
 
+        // Type-based success message
+        $messages = [
+            'newsletter' => 'Thanks for subscribing! You will now receive our updates.',
+            'contact'    => 'Thank you! Your message has been received — we will get back to you within 24 hours.',
+            'enquiry'    => 'Thank you! Your service request has been received — we will get back to you within 24 hours.',
+            'cta'        => 'Thank you! Your message has been received — we will get back to you within 24 hours.',
+        ];
+
+        $message = $messages[$lead->type] ?? 'Thank you! Your message has been received.';
+
+        // If the request expects JSON (AJAX/fetch), return JSON instead of redirecting
+        if ($request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => $message,
+            ], 200);
+        }
+
         return back()
-            ->with('lead_success', 'Thank you! Your message has been received — we will get back to you within 24 hours.')
+            ->with('lead_success', $message)
             ->withFragment('contact');
     }
 }
