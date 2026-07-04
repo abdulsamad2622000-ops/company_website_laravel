@@ -3650,3 +3650,16 @@ input, textarea, select, .form-control, .form-select,
   letter-spacing:.4px;
   margin-top:2px;
 }
+
+
+
+/* footer brand = navbar jaisa */
+.footer-brand-wrap{ display:flex !important; align-items:center; gap:12px; }
+.footer-brand-textwrap{ display:flex; flex-direction:column; line-height:1.15; }
+.footer-brand-textwrap .footer-brand-name{ margin:0; }
+.footer-brand-textwrap .footer-brand-tagline{
+  display:block; margin:2px 0 0 !important; padding:0 !important;
+  font-size:13px; font-weight:500; color:#2563eb !important;
+  -webkit-text-fill-color:#2563eb; letter-spacing:.4px;
+  width:auto !important; flex-basis:auto !important;
+}
