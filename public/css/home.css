@@ -3663,3 +3663,36 @@ input, textarea, select, .form-control, .form-select,
   -webkit-text-fill-color:#2563eb; letter-spacing:.4px;
   width:auto !important; flex-basis:auto !important;
 }
+
+
+/* ═══ mega-menu hover fix (turant band na ho) ═══ */
+.navbar-nav .nav-item.dropdown{ position: static; }
+
+/* dropdown aur toggle ke beech ka gap bharo (mouse move karne pe menu band na ho) */
+.navbar-nav .nav-item.dropdown > .dropdown-toggle::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -18px;
+  height: 18px;
+}
+
+/* hover pe menu khula rahe + thodi der tak visible */
+.navbar-nav .nav-item.dropdown:hover > .dropdown-menu,
+.navbar-nav .nav-item.dropdown:hover > .mega-menu,
+.navbar-nav .nav-item.dropdown:hover > .industries-mega{
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* menu par hover karte hi woh khula rahe */
+.dropdown-menu:hover, .mega-menu:hover, .industries-mega:hover{
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* menu ko navbar ke bilkul neeche laao (koi gap na rahe) */
+.mega-menu, .industries-mega{ margin-top: 0 !important; }

@@ -38,8 +38,7 @@
                 <a href="https://wa.me/923168738819" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>+92 316 8738819</a>
             </div>
             <div class="d-flex gap-3 align-items-center">
-                <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
-                <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                <a href="{{ route('help') }}">Help</a><a href="{{ route('support') }}">Support</a><a href="{{ route('faq') }}">FAQs</a>                <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
             </div>

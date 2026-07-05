@@ -110,18 +110,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var drawer = document.createElement('div');
     drawer.className = 'xdrawer';
     drawer.innerHTML =
-      '<div class="xdrawer-head">'+
-        '<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;"><img src="/img/logo.png" alt="" style="height:38px;width:auto;object-fit:contain;"><span style="font-weight:800;color:#1e3a8a;font-size:19px;">NovaStackhub</span></a>'+
-        '<button type="button" class="xdrawer-close" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>'+
-      '</div>'+
-      '<ul class="xdrawer-nav">'+ srcNav.innerHTML + (srcBtn ? srcBtn.outerHTML : '') +'</ul>'+
-      '<div class="xdrawer-contact">'+
-        '<h6>Contact Info</h6>'+
-        '<div class="xdrawer-line"><i class="bi bi-geo-alt"></i><span>55 Main Street, Karachi, Pakistan</span></div>'+
-        '<a class="xdrawer-line" href="mailto:infonovastackhub@gmail.com"><i class="bi bi-envelope"></i><span>infonovastackhub@gmail.com</span></a>'+
-        '<a class="xdrawer-line" href="tel:+11234568899"><i class="bi bi-telephone"></i><span>+1 (123) 456 889</span></a>'+
-        '<div class="xdrawer-socials"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>'+
-      '</div>';
+ '<div class="xdrawer-head">'+
+    '<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;"><img src="/img/logo.png" alt="" style="height:38px;width:auto;object-fit:contain;"><span style="font-weight:800;color:#1e3a8a;font-size:19px;">NovaStackhub</span></a>'+
+    '<button type="button" class="xdrawer-close" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>'+
+  '</div>'+
+  '<ul class="xdrawer-nav">'+ srcNav.innerHTML + (srcBtn ? srcBtn.outerHTML : '') +'</ul>'+
+  '<div class="xdrawer-contact">'+
+    '<h6>Contact Info</h6>'+
+    '<div class="xdrawer-line"><i class="bi bi-geo-alt"></i><span>Office # M-3-61, Plot # 1, Sheet # SB-5, China Shopping Center, A.H. Road, Saddar, Karachi</span></div>'+
+    '<a class="xdrawer-line" href="mailto:info@novastackhub.com"><i class="bi bi-envelope"></i><span>info@novastackhub.com</span></a>'+
+    '<a class="xdrawer-line" href="tel:+923168738819"><i class="bi bi-telephone"></i><span>+92 316 8738819</span></a>'+
+    '<div class="xdrawer-socials"><a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a><a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a></div>'+
+  '</div>';
     document.body.appendChild(drawer);
 
     var bd = document.createElement('div');
@@ -268,6 +268,17 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }, true);   // capture phase — Bootstrap se pehle chalega
   });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth >= 992) {  // sirf desktop pe
+    document.querySelectorAll('.navbar .nav-link.dropdown-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) { e.preventDefault(); });
+    });
+  }
 });
 </script>
 </body>

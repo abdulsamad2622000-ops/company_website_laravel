@@ -28,7 +28,7 @@
                 <a href="https://wa.me/923168738819" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>+92 316 8738819</a>
             </div>
             <div class="d-flex gap-3 align-items-center">
-                <a href="#">Help</a><a href="#">Support</a><a href="#">FAQs</a>
+                <a href="{{ route('help') }}">Help</a><a href="{{ route('support') }}">Support</a><a href="{{ route('faq') }}">FAQs</a>
                 <a href="https://www.facebook.com/share/1CzWv5wcNX/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/novastackhub?igsh=YWd5bXF4cW44MHNn" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/novastackhub/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
@@ -56,11 +56,11 @@
             We Are <span class="ah-hl">Passionate</span><br>Digital Innovators
           </h1>
           <p class="ah-desc" data-aos="fade-right" data-aos-delay="200">
-            Founded with a vision to revolutionize the digital landscape, NovaStackhub has grown into a premier software agency trusted by <strong>36k+ global clients</strong> across 40+ industries.
-          </p>
+  With a vision to revolutionize the digital landscape, NovaStackhub has grown into a trusted software agency serving <strong>60+ happy clients</strong> across multiple industries.
+</p>
           <div class="ah-btns" data-aos="fade-right" data-aos-delay="300">
             <a href="#about-story" class="btn-primary-c">Discover Our Story &rarr;</a>
-            <a href="#about-team" class="btn-outline-c"><i class="bi bi-people me-2"></i>Meet The Team</a>
+            <!-- <a href="#about-team" class="btn-outline-c"><i class="bi bi-people me-2"></i>Meet The Team</a> -->
           </div>
           <!-- Breadcrumb -->
           <nav class="ah-breadcrumb" data-aos="fade-right" data-aos-delay="400">
@@ -77,14 +77,14 @@
             <div class="ah-badge ah-badge-top">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="color:var(--cyan);flex-shrink:0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
               <div>
-                <div class="ah-badge-num">10+</div>
+                <div class="ah-badge-num">2+</div>
                 <div class="ah-badge-label">Years Experience</div>
               </div>
             </div>
             <div class="ah-badge ah-badge-bottom">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="color:var(--cyan);flex-shrink:0"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
               <div>
-                <div class="ah-badge-num">850+</div>
+                <div class="ah-badge-num">70+</div>
                 <div class="ah-badge-label">Projects Delivered</div>
               </div>
             </div>
@@ -100,20 +100,20 @@
     <div class="container">
       <div class="row g-0">
         <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="0">
-          <div class="stat-num" data-target="36" data-suffix="k+">0</div>
-          <div class="stat-lbl">Global Clients</div>
+          <div class="stat-num" data-target="60" data-suffix="+">0</div>
+<div class="stat-lbl">Happy Clients</div>
         </div>
         <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="stat-num" data-target="850" data-suffix="+">0</div>
-          <div class="stat-lbl">Projects Delivered</div>
+         <div class="stat-num" data-target="70" data-suffix="+">0</div>
+<div class="stat-lbl">Projects Delivered</div>
         </div>
         <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="stat-num" data-target="40" data-suffix="+">0</div>
-          <div class="stat-lbl">Industries Served</div>
+         <div class="stat-num" data-target="12" data-suffix="+">0</div>
+<div class="stat-lbl">Team Experts</div>
         </div>
         <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="stat-num" data-target="99" data-suffix="%">0</div>
-          <div class="stat-lbl">Client Satisfaction</div>
+           <div class="stat-num" data-target="40" data-suffix="+">0</div>
+          <div class="stat-lbl">Industries Served</div>
         </div>
       </div>
     </div>
@@ -130,8 +130,8 @@
             <div class="story-img-card">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
               <div>
-                <div class="story-card-year">Est. 2014</div>
-                <div class="story-card-text">Decade of Innovation</div>
+                <div class="story-card-year">Est. 2024</div>
+<div class="story-card-text">Built on Years of Experience</div>
               </div>
             </div>
           </div>
@@ -139,38 +139,37 @@
         <div class="col-lg-6" data-aos="fade-left">
           <span class="eyebrow"><i class="bi bi-asterisk"></i> Our Story</span>
           <h2 class="section-title">From a <span>Small Startup</span><br>to a Global Agency</h2>
-          <p class="section-text">It all started in 2014 with a small team of passionate developers and a big dream — to build software that genuinely changes how businesses operate. Over the years, we have grown into a 150+ member team spanning design, engineering, strategy, and support.</p>
-          <p class="section-text">Today, NovaStackhub is a trusted digital partner for businesses across 40+ industries worldwide. We combine deep technical expertise with a client-first philosophy to deliver solutions that create real, measurable impact.</p>
-
+<p class="section-text">Our journey began in 2018, driven by a passion for building software that genuinely helps businesses grow. In 2024, that experience came together to launch NovaStackhub — a dedicated software agency built on years of hands-on development work.</p>
+<p class="section-text">Today, NovaStackhub is a trusted technology partner for businesses across multiple industries. We combine hands-on technical expertise with a client-first philosophy to deliver solutions that create real, measurable impact.</p>
           <div class="story-timeline">
             <div class="tl-item" data-aos="fade-up" data-aos-delay="0">
-              <div class="tl-dot"></div>
-              <div class="tl-content">
-                <div class="tl-year">2014</div>
-                <div class="tl-text">Founded in Karachi with 5 developers and 1 big dream.</div>
-              </div>
-            </div>
-            <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="tl-dot"></div>
-              <div class="tl-content">
-                <div class="tl-year">2017</div>
-                <div class="tl-text">Expanded to 50+ team members. Crossed 200 projects delivered.</div>
-              </div>
-            </div>
-            <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="tl-dot"></div>
-              <div class="tl-content">
-                <div class="tl-year">2020</div>
-                <div class="tl-text">Went global — serving clients across USA, UK, UAE, and Canada.</div>
-              </div>
-            </div>
-            <div class="tl-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="tl-dot"></div>
-              <div class="tl-content">
-                <div class="tl-year">2024</div>
-                <div class="tl-text">36k+ clients, 850+ projects. Industry-leading software agency.</div>
-              </div>
-            </div>
+  <div class="tl-dot"></div>
+  <div class="tl-content">
+    <div class="tl-year">2018</div>
+    <div class="tl-text">The journey began — building hands-on development experience project by project.</div>
+  </div>
+</div>
+<div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+  <div class="tl-dot"></div>
+  <div class="tl-content">
+    <div class="tl-year">2024</div>
+    <div class="tl-text">NovaStackhub officially launched in Karachi, built on years of prior experience.</div>
+  </div>
+</div>
+<div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+  <div class="tl-dot"></div>
+  <div class="tl-content">
+    <div class="tl-year">2025</div>
+    <div class="tl-text">Grew our team and delivered ERP systems across multiple industries.</div>
+  </div>
+</div>
+<div class="tl-item" data-aos="fade-up" data-aos-delay="300">
+  <div class="tl-dot"></div>
+  <div class="tl-content">
+    <div class="tl-year">2026</div>
+    <div class="tl-text">60+ happy clients, 70+ projects delivered — growing every day.</div>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -327,14 +326,14 @@
             <div class="why-floating-card wfc-1">
               <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <div>
-                <div class="wfc-num">4.9/5</div>
-                <div class="wfc-label">Average Rating</div>
+                <div class="wfc-num">60+</div>
+    <div class="wfc-label">Happy Clients</div>
               </div>
             </div>
             <div class="why-floating-card wfc-2">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" style="color:var(--cyan)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <div>
-                <div class="wfc-num">150+</div>
+                <div class="wfc-num">12+</div>
                 <div class="wfc-label">Team Members</div>
               </div>
             </div>
@@ -499,10 +498,10 @@
                     <p class="mb-0">Our mission is to revolutionize the digital landscape by delivering innovative software solutions that empower businesses to achieve their full potential and lead in the modern, tech-driven economy.</p>
                   </div>
                   <ul class="acc-list">
-                    <li><i class="bi bi-check-lg"></i> Premier Tech Innovations</li>
-                    <li><i class="bi bi-check-lg"></i> Nexus Tech Systems</li>
-                    <li><i class="bi bi-check-lg"></i> Data-driven decisions</li>
-                  </ul>
+    <li><i class="bi bi-check-lg"></i> Client-first approach</li>
+    <li><i class="bi bi-check-lg"></i> Measurable business outcomes</li>
+    <li><i class="bi bi-check-lg"></i> Data-driven decisions</li>
+</ul>
                 </div>
               </div>
             </div>
@@ -548,63 +547,59 @@
     </div>
   </section>
 
-  <!-- ═══ TESTIMONIALS ═══ -->
-  <section class="testi-section">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Client Reviews</span>
-        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+ <!-- ═══ TESTIMONIALS ═══ -->
+<section class="testi-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Client Reviews</span>
+      <h2 class="section-title">What Our <span>Clients Say</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>"NovaStackhub built a complete ERP system for Star Computer that streamlined our entire operations. The team understood our workflow perfectly and delivered exactly what we needed."</p>
+          <div class="testi-author">
+            <div>
+              <h6>Rehan</h6>
+              <span>Star Computer — ERP System</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>"NovaStack Hub transformed our entire workflow. Their team delivered beyond expectations with clean code, fast turnarounds, and constant communication."</p>
-            <div class="testi-author">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80" alt="Angela Ford">
-              <div>
-                <h6>Angela M. Ford</h6>
-                <span>Product Manager, TechCorp</span>
-              </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="testi-card testi-card-accent">
+          <div class="testi-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>"The Water ERP built by NovaStackhub transformed how we manage our distribution business. From orders to billing, everything is now smooth, fast, and fully organized."</p>
+          <div class="testi-author">
+            <div>
+              <h6>Ahmed Raza</h6>
+              <span>Raza Water Distributor — Water ERP</span>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-          <div class="testi-card testi-card-accent">
-            <div class="testi-stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>"Professional, reliable, and incredibly talented. Working with NovaStack Hub felt like having an in-house dev team that genuinely cared about our success."</p>
-            <div class="testi-author">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="David Owen">
-              <div>
-                <h6>David K. Owen</h6>
-                <span>Startup Founder, LaunchPad</span>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
           </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>"From planning to deployment, every step was smooth. NovaStack Hub's attention to detail and design sense really set them apart from every other agency we tried."</p>
-            <div class="testi-author">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sara Whitman">
-              <div>
-                <h6>Sara L. Whitman</h6>
-                <span>Marketing Head, BrandUp</span>
-              </div>
+          <p>"NovaStackhub designed a clean, professional website for Taj Silver Trade that perfectly represents our brand. Great communication and on-time delivery throughout."</p>
+          <div class="testi-author">
+            <div>
+              <h6>Zain Allana</h6>
+              <span>Taj Silver Trade — Website</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- ═══ CTA / CONTACT ═══ -->
   @include('partials.contact')
 
@@ -803,5 +798,45 @@
 
   
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('newsletterForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msgBox = document.getElementById('newsletterMsg');
+    var btn = form.querySelector('button[type="submit"]');
+    var formData = new FormData(form);
+
+    btn.disabled = true;
+    msgBox.textContent = '';
+
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function (res) { return res.json().then(function (data) { return { status: res.status, data: data }; }); })
+    .then(function (result) {
+      btn.disabled = false;
+      if (result.status >= 200 && result.status < 300) {
+        msgBox.style.color = '#22c55e';
+        msgBox.textContent = 'Thanks for subscribing! You will now receive our updates.';
+        form.reset();
+      } else {
+        msgBox.style.color = '#ef4444';
+        msgBox.textContent = (result.data && result.data.message) ? result.data.message : 'Something went wrong. Please try again.';
+      }
+    })
+    .catch(function () {
+      btn.disabled = false;
+      msgBox.style.color = '#ef4444';
+      msgBox.textContent = 'Something went wrong. Please try again.';
+    });
+  });
+});
+</script>
+  
 @endverbatim
 @endpush

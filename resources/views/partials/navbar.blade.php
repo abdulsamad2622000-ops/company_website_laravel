@@ -30,13 +30,14 @@
 
         <!-- SERVICES -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/#services" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">
             <i class="ti ti-briefcase me-1"></i>Services
           </a>
           <ul class="dropdown-menu mega-menu">
             <div class="mega-cols">
               <div class="mega-col">
-                <li><h6 class="dropdown-header">💻 Software Development</h6></li>
+                <li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Software Development</h6></li>
+
                 <li><a class="dropdown-item" href="/services/custom-software-development"><i class="ti ti-code"></i>Custom Software Development</a></li>
                 <li><a class="dropdown-item" href="/services/erp-development"><i class="ti ti-building-factory"></i>ERP Development</a></li>
                 <li><a class="dropdown-item" href="/services/crm-development"><i class="ti ti-users"></i>CRM Development</a></li>
@@ -45,20 +46,22 @@
                 <li><a class="dropdown-item" href="/services/enterprise-software"><i class="ti ti-server"></i>Enterprise Software</a></li>
                 <li><a class="dropdown-item" href="/services/business-process-automation"><i class="ti ti-robot"></i>Business Process Automation</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><h6 class="dropdown-header">🎨 Design</h6></li>
+<li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Design</h6></li>
                 <li><a class="dropdown-item" href="/services/ui-ux-design"><i class="ti ti-palette"></i>UI/UX Design</a></li>
                 <li><a class="dropdown-item" href="/services/mobile-app-ui-ux"><i class="ti ti-device-mobile"></i>Mobile App UI/UX</a></li>
                 <li><a class="dropdown-item" href="/services/accessibility-services"><i class="ti ti-accessible"></i>Accessibility Services</a></li>
               </div>
               <div class="mega-col">
-                <li><h6 class="dropdown-header">🌐 Web &amp; E-Commerce</h6></li>
+                <li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Web &amp; E-Commerce</h6></li>
+
                 <li><a class="dropdown-item" href="/services/web-application-development"><i class="ti ti-world"></i>Web Application Development</a></li>
                 <li><a class="dropdown-item" href="/services/frontend-development"><i class="ti ti-layout"></i>Frontend Development</a></li>
                 <li><a class="dropdown-item" href="/services/backend-development"><i class="ti ti-database"></i>Backend Development</a></li>
                 <li><a class="dropdown-item" href="/services/e-commerce-solutions"><i class="ti ti-shopping-cart"></i>E-Commerce Solutions</a></li>
                 <li><a class="dropdown-item" href="/services/api-development-integration"><i class="ti ti-api"></i>API Development &amp; Integration</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><h6 class="dropdown-header">☁️ Cloud &amp; IT Ops</h6></li>
+                <li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg> Cloud &amp; IT Ops</h6></li>
+
                 <li><a class="dropdown-item" href="/services/cloud-solutions"><i class="ti ti-cloud-upload"></i>Cloud Solutions</a></li>
                 <li><a class="dropdown-item" href="/services/devops-services"><i class="ti ti-settings"></i>DevOps Services</a></li>
                 <li><a class="dropdown-item" href="/services/cybersecurity"><i class="ti ti-shield-lock"></i>Cybersecurity</a></li>
@@ -66,7 +69,7 @@
                 <li><a class="dropdown-item" href="/services/it-consulting"><i class="ti ti-headset"></i>IT Consulting</a></li>
               </div>
               <div class="mega-col">
-                <li><h6 class="dropdown-header">📱 Mobile Apps</h6></li>
+                <li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Mobile Apps</h6></li>
                 <li><a class="dropdown-item" href="/services/android-app-development"><i class="ti ti-brand-android"></i>Android App Development</a></li>
                 <li><a class="dropdown-item" href="/services/ios-app-development"><i class="ti ti-brand-apple"></i>iOS App Development</a></li>
                 <li><a class="dropdown-item" href="/services/cross-platform-flutter-rn"><i class="ti ti-devices"></i>Cross-Platform (Flutter/RN)</a></li>
@@ -75,7 +78,7 @@
                 <li><a class="dropdown-item" href="/services/fintech-banking-apps"><i class="ti ti-coin"></i>FinTech &amp; Banking Apps</a></li>
                 <li><a class="dropdown-item" href="/services/healthcare-mobile-apps"><i class="ti ti-heart-rate-monitor"></i>Healthcare Mobile Apps</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><h6 class="dropdown-header">🔧 Support &amp; Quality</h6></li>
+                <li><h6 class="dropdown-header"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:6px;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Support &amp; Quality</h6></li>
                 <li><a class="dropdown-item" href="/services/maintenance-support"><i class="ti ti-tool"></i>Maintenance &amp; Support</a></li>
                 <li><a class="dropdown-item" href="/services/qa-testing"><i class="ti ti-checkup-list"></i>QA &amp; Testing</a></li>
                 <li><a class="dropdown-item" href="/services/app-store-deployment"><i class="ti ti-brand-google-play"></i>App Store Deployment</a></li>
@@ -136,16 +139,16 @@
           </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#case-studio"><i class="ti ti-report-analytics me-1"></i>Case Studio</a>
-        </li>
+     <li class="nav-item">
+  <a class="nav-link" href="{{ route('case-studies') }}"><i class="ti ti-report-analytics me-1"></i>Case Studies</a>
+</li>
 
         <li class="nav-item">
           <a class="nav-link active" href="/pricing"><i class="bi bi-tag me-1"></i>Pricing</a>
         </li>
 
       </ul>
-      <a href="/#cta" class="btn-quote nav-link px-4">CONTACT US &rarr;</a>
+     <a href="/#contact" class="btn-quote nav-link px-4">CONTACT US &rarr;</a>
     </div>
   </div>
 </nav>
