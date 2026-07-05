@@ -96,14 +96,13 @@
                 <div class="col-lg-6">
                     <p class="hero-eyebrow fade-up">Welcome to NovaStackhub</p>
                     <h1 class="hero-title fade-up" style="transition-delay:.1s">
-                        NextGen Software Innovators<br>and <span class="highlight">DIGITAL SOFT</span> Solutions
-                    </h1>
-                    <p class="hero-desc fade-up" style="transition-delay:.2s">We build powerful, scalable software
-                        products that help businesses transform, grow, and lead in the digital age.</p>
-                    <div class="hero-btns fade-up" style="transition-delay:.3s">
-                        <button class="btn-primary-c">Explore Services &rarr;</button>
-                        <button class="btn-outline-c"><i class="bi bi-play-circle me-2"></i>Watch Demo</button>
-                    </div>
+  Custom <span class="hl">Software</span> That Powers Your Business Growth
+</h1>
+<p class="hero-desc fade-up" style="transition-delay:.2s">We design, build, and scale powerful software — web apps, mobile apps, and cloud solutions — that help businesses transform, grow, and lead in the digital age.</p>   
+               <div class="hero-btns fade-up" style="transition-delay:.3s">
+    <a href="#services" class="btn-primary-c">Explore Services &rarr;</a>
+     <!-- <button class="btn-outline-c"><i class="bi bi-play-circle me-2"></i>Watch Demo</button>  -->
+</div>
                     <div class="hero-stats fade-up" style="transition-delay:.4s">
                         <div>
                             <div class="hero-stat-num" id="cnt1">0+</div>
@@ -130,48 +129,49 @@
     <div id="marqueeWrap"
             style="overflow:hidden; white-space:nowrap; border-top:1px solid #1a3050; border-bottom:1px solid #1a3050; padding:10px 0; margin-bottom:60px;">
             <span id="marqueeText"
-                style="display:inline-block; animation:marquee 20s linear infinite; font-size:clamp(52px,9vw,100px); font-weight:900; color:#fff; letter-spacing:-2px;">
-                Software Development <span style="color:#00c8ff; margin:0 24px;">●</span> Digital Solutions <span
-                    style="color:#00c8ff; margin:0 24px;">●</span> NextGen Technology <span
-                    style="color:#00c8ff; margin:0 24px;">●</span> Software Development <span
-                    style="color:#00c8ff; margin:0 24px;">●</span> Digital Solutions <span
-                    style="color:#00c8ff; margin:0 24px;">●</span> NextGen Technology <span
-                    style="color:#00c8ff; margin:0 24px;">●</span>
-            </span>
+    style="display:inline-block; animation:marquee 20s linear infinite; font-size:clamp(52px,9vw,100px); font-weight:900; color:#fff; letter-spacing:-2px;">
+    Web Development <span style="color:#00c8ff; margin:0 24px;">●</span> Mobile Apps <span
+        style="color:#00c8ff; margin:0 24px;">●</span> Cloud Solutions <span
+        style="color:#00c8ff; margin:0 24px;">●</span> UI/UX Design <span
+        style="color:#00c8ff; margin:0 24px;">●</span> Custom Software <span
+        style="color:#00c8ff; margin:0 24px;">●</span> AI &amp; Automation <span
+        style="color:#00c8ff; margin:0 24px;">●</span> Web Development <span
+        style="color:#00c8ff; margin:0 24px;">●</span> Mobile Apps <span
+        style="color:#00c8ff; margin:0 24px;">●</span> Cloud Solutions <span
+        style="color:#00c8ff; margin:0 24px;">●</span> UI/UX Design <span
+        style="color:#00c8ff; margin:0 24px;">●</span>
+</span>
         </div>
 
-        <!-- Circle + Text -->
-        <div style="display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
-            <div style="position:relative; width:140px; height:140px; flex-shrink:0;">
-                <div style="position:absolute; inset:0; animation:spin 9s linear infinite;">
-                    <svg width="140" height="140" viewBox="0 0 140 140">
-                        <defs>
-                            <path id="cp" d="M 70,70 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" />
-                        </defs>
-                        <text font-size="11.2" font-family="Inter,sans-serif" font-weight="700" fill="#ffffff"
-                            letter-spacing="3.2">
-                            <textPath href="#cp">Digital · Software · Solutions · Agency · </textPath>
-                        </text>
-                    </svg>
-                </div>
-                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
-                    <a href="#"
-                        style="width:56px; height:56px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; color:#0d1f2d; text-decoration:none;">↗</a>
-                </div>
-            </div>
-            <div style="flex:1; min-width:220px;">
-                <div
-                    style="font-size:13px; font-weight:700; color:#00c8ff; letter-spacing:2px; text-transform:uppercase; margin-bottom:12px;">
-                    We Are NovaStack Hub</div>
-                <div
-                    style="font-size:clamp(26px,4vw,42px); font-weight:900; color:#fff; line-height:1.15; margin-bottom:16px;">
-                    Innovate Soft Solutions<br>to <span style="color:#00c8ff;">Grow Tech</span> Business</div>
-                <div style="font-size:15px; color:#8899aa; line-height:1.7;">With a portfolio of successful projects
-                    spanning various industries, our team has consistently demonstrated the ability to transform ideas
-                    into high-performing applications.</div>
-            </div>
+       <!-- Circle + Text -->
+<div style="display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
+    <div style="position:relative; width:140px; height:140px; flex-shrink:0;">
+        <div style="position:absolute; inset:0; animation:spin 9s linear infinite;">
+            <svg width="140" height="140" viewBox="0 0 140 140">
+                <defs>
+                    <path id="cp" d="M 70,70 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" />
+                </defs>
+                <text font-size="10" font-family="Inter,sans-serif" font-weight="600" fill="#ffffff"
+                    letter-spacing="1.5">
+                    <textPath href="#cp">NovaStackhub · Software Agency · Since 2024 · </textPath>
+                </text>
+            </svg>
+        </div>
+        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+            <a href="/about"
+                style="width:56px; height:56px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; color:#0d1f2d; text-decoration:none;">↗</a>
         </div>
     </div>
+    <div style="flex:1; min-width:220px;">
+        <div
+            style="font-size:13px; font-weight:700; color:#00c8ff; letter-spacing:2px; text-transform:uppercase; margin-bottom:12px;">
+            We Are NovaStackhub</div>
+        <div
+            style="font-size:clamp(26px,4vw,42px); font-weight:900; color:#fff; line-height:1.15; margin-bottom:16px;">
+            Building Smart Software<br>to <span style="color:#00c8ff;">Grow Your</span> Business</div>
+        <div style="font-size:15px; color:#8899aa; line-height:1.7;">With a growing portfolio of successful projects across multiple industries, our team turns ideas into reliable, high-performing digital products — built to scale with your business.</div>
+    </div>
+</div>
 
     <!-- CLIENTS
     <div id="clients">
@@ -402,8 +402,7 @@
     <div class="row align-items-center g-5">
       <div class="col-lg-6" data-aos="fade-right">
         <span class="eyebrow"><i class="bi bi-asterisk"></i> Grow &amp; Development</span>
-        <h2 class="section-title">Modern Technology and <span>Advancement Incentives</span></h2>
-
+<h2 class="section-title">Built to Help Your Business <span>Grow &amp; Scale</span></h2>
         <div class="accordion teckko-accordion mt-4" id="aboutAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -412,16 +411,16 @@
               </button>
             </h2>
             <div id="missionBox" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
-              <div class="accordion-body">
-                <div class="d-flex gap-3 align-items-start mb-3">
-                  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&q=80" class="mission-thumb" alt="Mission">
-                  <p class="mb-0">Our mission is to revolutionize the digital landscape delivering innovative software solutions to empower businesses to achieve their full potential.</p>
-                </div>
-                <ul class="check-list">
-                  <li><i class="bi bi-asterisk"></i> Premier Tech Innovations</li>
-                  <li><i class="bi bi-asterisk"></i> Nexus Tech Systems</li>
-                </ul>
-              </div>
+        <div class="accordion-body">
+  <div class="d-flex gap-3 align-items-start mb-3">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&q=80" class="mission-thumb" alt="Mission">
+    <p class="mb-0">Our mission is to help businesses grow by building reliable, modern software — turning complex ideas into simple, scalable digital products that deliver real results.</p>
+  </div>
+  <ul class="check-list">
+    <li><i class="bi bi-asterisk"></i> Client-first, transparent process</li>
+    <li><i class="bi bi-asterisk"></i> Modern, scalable technology</li>
+  </ul>
+</div>
             </div>
           </div>
           <div class="accordion-item">
@@ -432,8 +431,8 @@
             </h2>
             <div id="visionBox" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
               <div class="accordion-body">
-                <p class="mb-0">We envision becoming the leading global software partner, recognized for building technology that genuinely transforms how businesses operate and grow.</p>
-              </div>
+<p class="mb-0">To become a trusted software partner for businesses worldwide — known for quality, honesty, and technology that genuinely helps our clients grow.</p> 
+             </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -472,15 +471,19 @@
     <!-- marquee strip -->
     <div class="marquee-wrap mt-5">
       <div class="marquee-track">
-        <span>Innovation <i class="bi bi-asterisk"></i></span>
-        <span>Design <i class="bi bi-asterisk"></i></span>
-        <span>Development <i class="bi bi-asterisk"></i></span>
-        <span>Strategy <i class="bi bi-asterisk"></i></span>
-        <span>Innovation <i class="bi bi-asterisk"></i></span>
-        <span>Design <i class="bi bi-asterisk"></i></span>
-        <span>Development <i class="bi bi-asterisk"></i></span>
-        <span>Strategy <i class="bi bi-asterisk"></i></span>
-      </div>
+  <span>Innovation <i class="bi bi-asterisk"></i></span>
+  <span>Quality <i class="bi bi-asterisk"></i></span>
+  <span>Reliability <i class="bi bi-asterisk"></i></span>
+  <span>Scalability <i class="bi bi-asterisk"></i></span>
+  <span>Security <i class="bi bi-asterisk"></i></span>
+  <span>Support <i class="bi bi-asterisk"></i></span>
+  <span>Innovation <i class="bi bi-asterisk"></i></span>
+  <span>Quality <i class="bi bi-asterisk"></i></span>
+  <span>Reliability <i class="bi bi-asterisk"></i></span>
+  <span>Scalability <i class="bi bi-asterisk"></i></span>
+  <span>Security <i class="bi bi-asterisk"></i></span>
+  <span>Support <i class="bi bi-asterisk"></i></span>
+</div>
     </div>
   </div>
 </section>
@@ -491,8 +494,7 @@
   <div class="container position-relative">
     <div class="text-center mb-5" data-aos="fade-up">
       <span class="eyebrow justify-content-center"><i class="bi bi-asterisk"></i> Our Popular Services</span>
-      <h2 class="section-title">We Run All kinds <span>Of IT Services</span><br>that vow Your <span>Success</span></h2>
-    </div>
+<h2 class="section-title">We Run All Kinds <span>Of IT Services</span><br>That Drive Your <span>Success</span></h2>    </div>
     <div class="row g-4">
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
         <div class="service-card">
@@ -502,8 +504,7 @@
             </svg>
           </div>
           <h4>Custom Software Development</h4>
-          <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" class="service-img" alt="Custom Software Development">
+<p>From concept to launch, we craft tailor-made software that fits your exact workflows — scalable, secure, and built to grow with your business.</p>          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" class="service-img" alt="Custom Software Development">
           <a href="/services/custom-software-development" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
@@ -518,8 +519,7 @@
             </svg>
           </div>
           <h4>Outsourcing Development</h4>
-          <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" class="service-img" alt="Outsourcing Development">
+<p>Extend your team with our expert engineers. We deliver reliable, on-time solutions that cut costs and speed up your product roadmap.</p>          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" class="service-img" alt="Outsourcing Development">
           <a href="/services/enterprise-software" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
@@ -534,8 +534,7 @@
             </svg>
           </div>
           <h4>Software Product Development</h4>
-          <p>We specialize delivering bespoke software applications perfectly aligned with your operational needs.</p>
-          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80" class="service-img" alt="Software Product Development">
+<p>We turn your idea into a market-ready product — from MVP to full-scale platform — with clean architecture and a real focus on user experience.</p>          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80" class="service-img" alt="Software Product Development">
           <a href="/services/saas-product-development" class="service-plus">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </a>
@@ -560,7 +559,7 @@
         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Client">
         <span class="avatar-plus">+</span>
       </div>
-      <strong>1.8 million+</strong> Trusted Clients
+<strong>60+</strong> Trusted Clients
       <button class="btn-close-promo" id="closePromo"><i class="bi bi-x-lg"></i></button>
     </div>
   </div>
@@ -707,36 +706,37 @@
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
+<!-- ============ TESTIMONIALS ============ -->
 <section class="testimonial-section" id="testimonials">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6" data-aos="fade-right">
-        <h2 class="section-title">1250+ People Say <span>About Us</span></h2>
-        <div id="testiCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+       <div id="testiCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M10 11H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4H4v-2h2a2 2 0 0 0 2-2v-1zm10 0h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2v-1z"/></svg>
-              <p class="testi-text">Climb the mountain not to plant your flag but to embrace the ways challenge, enjoy the air, and behold the. Climb it see the world, not so the world can see you.</p>
-              <h6 class="mb-0">Richard T. Simmons</h6>
-              <span class="testi-role">Graphics Designer</span>
+              <p class="testi-text">NovaStackhub built a complete ERP system for Star Computer that streamlined our entire operations. The team understood our workflow perfectly and delivered exactly what we needed.</p>
+              <h6 class="mb-0">Rehan</h6>
+              <span class="testi-role">Star Computer — ERP System</span>
             </div>
             <div class="carousel-item">
               <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M10 11H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4H4v-2h2a2 2 0 0 0 2-2v-1zm10 0h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2v-1z"/></svg>
-              <p class="testi-text">NovaStack Hub transformed our entire workflow. Their team delivered beyond expectations with clean code, fast turnarounds, and constant communication throughout the project.</p>
-              <h6 class="mb-0">Angela M. Ford</h6>
-              <span class="testi-role">Product Manager</span>
+              <p class="testi-text">Our gold &amp; silver accounting system from NovaStackhub made daily record-keeping effortless and accurate. Reliable software and a team that truly delivers.</p>
+              <h6 class="mb-0">Rehan</h6>
+              <span class="testi-role">KW Gold &amp; Silver — Accounting System</span>
             </div>
             <div class="carousel-item">
               <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M10 11H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4H4v-2h2a2 2 0 0 0 2-2v-1zm10 0h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2v-1z"/></svg>
-              <p class="testi-text">Professional, reliable, and incredibly talented. Working with NovaStack Hub felt like having an in-house dev team that genuinely cared about our success.</p>
-              <h6 class="mb-0">David K. Owen</h6>
-              <span class="testi-role">Startup Founder</span>
+              <p class="testi-text">The Water ERP built by NovaStackhub transformed how we manage our distribution business. From orders to billing, everything is now smooth, fast, and fully organized.</p>
+              <h6 class="mb-0">Ahmed Raza</h6>
+              <span class="testi-role">Raza Water Distributor — Water ERP</span>
             </div>
             <div class="carousel-item">
               <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M10 11H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4H4v-2h2a2 2 0 0 0 2-2v-1zm10 0h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2v-1z"/></svg>
-              <p class="testi-text">From planning to deployment, every step was smooth. NovaStack Hub's attention to detail and design sense really set them apart from other agencies we tried.</p>
-              <h6 class="mb-0">Sara L. Whitman</h6>
-              <span class="testi-role">Marketing Head</span>
+              <p class="testi-text">NovaStackhub designed a clean, professional website for Taj Silver Trade that perfectly represents our brand. Great communication and on-time delivery throughout.</p>
+              <h6 class="mb-0">Zain Allana</h6>
+              <span class="testi-role">Taj Silver Trade — Website</span>
             </div>
           </div>
           <div class="carousel-dots dark-dots">

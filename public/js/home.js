@@ -55,8 +55,7 @@ const obs = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
 function animateCounters() {
-  [{el:'cnt1',end:850},{el:'cnt2',end:320},{el:'cnt3',end:45}].forEach(({el,end}) => {
-    let v = 0; const step = Math.ceil(end/50);
+[{el:'cnt1',end:70},{el:'cnt2',end:60},{el:'cnt3',end:12}].forEach(({el,end}) => {    let v = 0; const step = Math.ceil(end/50);
     const t = setInterval(() => {
       v = Math.min(v+step, end);
       document.getElementById(el).textContent = v+'+';
